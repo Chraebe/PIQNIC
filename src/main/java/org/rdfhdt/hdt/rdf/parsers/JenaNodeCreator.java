@@ -34,7 +34,7 @@ import org.apache.jena.graph.NodeFactory;
 /**
  * @author mario.arias
  *
- * Creates Jena Nodes from HDT CharSequences formatted by {@link JenaNodeFormatter}.
+ * Creates Jena Nodes from hdt CharSequences formatted by {@link JenaNodeFormatter}.
  *
  */
 public class JenaNodeCreator {

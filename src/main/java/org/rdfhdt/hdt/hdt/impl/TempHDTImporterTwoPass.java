@@ -123,7 +123,7 @@ public class TempHDTImporterTwoPass implements TempHDTImporter {
 		// Load triples (second pass)
 		parser.doParse(filename, baseUri, notation, new TripleAppender2(dictionary, triples, listener));
 
-		//reorganize HDT
+		//reorganize hdt
 		modHDT.reorganizeTriples(listener);
 
 		return modHDT;

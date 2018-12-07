@@ -40,7 +40,7 @@ import org.rdfhdt.hdt.listener.ProgressListener;
 
 /**
  * DictionarySection that caches results returned by a child DictionarySection to increase performance.
- * This one uses one cache per thread, to avoid waits on mutex when having concurrent queries.
+ * This one uses one put per thread, to avoid waits on mutex when having concurrent queries.
  * 
  * @author mario.arias
  *

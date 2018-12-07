@@ -7,14 +7,14 @@ import java.io.InputStream;
 import org.rdfhdt.hdt.listener.ProgressListener;
 
 /**
- * HDT Operations that are using internally from the implementation.
+ * hdt Operations that are using internally from the implementation.
  * @author mario.arias
  *
  */
 
 public interface HDTPrivate extends HDT {
 	/**
-	 * Loads a HDT file
+	 * Loads a hdt file
 	 * 
 	 * @param input
 	 *            InputStream to read from
@@ -22,7 +22,7 @@ public interface HDTPrivate extends HDT {
 	void loadFromHDT(InputStream input, ProgressListener listener) throws IOException;
 
 	/**
-	 * Loads a HDT file
+	 * Loads a hdt file
 	 * 
 	 * @param input
 	 *            InputStream to read from

@@ -67,7 +67,7 @@ public interface Triples extends Closeable {
 	long size();
 
 	/**
-	 * Populates HDT Header with all information relevant to this Triples under a RDF root node.
+	 * Populates hdt Header with all information relevant to this Triples under a RDF root node.
 	 * @param head
 	 * @param rootNode
 	 */

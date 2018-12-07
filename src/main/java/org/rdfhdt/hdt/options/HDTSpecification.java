@@ -31,7 +31,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /**
- * Holds the properties of HDT from a configuration file
+ * Holds the properties of hdt from a configuration file
  * 
  */
 public class HDTSpecification extends HDTOptionsBase {

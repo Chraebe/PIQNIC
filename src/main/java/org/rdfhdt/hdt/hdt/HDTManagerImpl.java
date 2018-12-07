@@ -95,7 +95,7 @@ public class HDTManagerImpl extends HDTManager {
 		// Create TempHDT
 		TempHDT modHdt = loader.loadFromRDF(spec, rdfFileName, baseURI, rdfNotation, listener);
 		
-		// Convert to HDT
+		// Convert to hdt
 		HDTImpl hdt = new HDTImpl(spec); 
 		hdt.loadFromModifiableHDT(modHdt, listener);
 		hdt.populateHeaderStructure(modHdt.getBaseURI());
@@ -120,7 +120,7 @@ public class HDTManagerImpl extends HDTManager {
 		// Create TempHDT
 		TempHDT modHdt = loader.loadFromTriples(spec, triples, baseURI, listener);
 		
-		// Convert to HDT
+		// Convert to hdt
 		HDTImpl hdt = new HDTImpl(spec); 
 		hdt.loadFromModifiableHDT(modHdt, listener);
 		hdt.populateHeaderStructure(modHdt.getBaseURI());

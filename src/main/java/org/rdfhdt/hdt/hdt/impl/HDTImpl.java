@@ -77,7 +77,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Basic implementation of HDT interface
+ * Basic implementation of hdt interface
  *
  */
 public class HDTImpl implements HDTPrivate {
@@ -107,7 +107,7 @@ public class HDTImpl implements HDTPrivate {
 		}
 		
 		if(isClosed) {
-			throw new IllegalStateException("Cannot add header to a closed HDT.");
+			throw new IllegalStateException("Cannot add header to a closed hdt.");
 		}
 		
 		header.insert(baseUri, HDTVocabulary.RDF_TYPE, HDTVocabulary.HDT_DATASET);
@@ -160,7 +160,7 @@ public class HDTImpl implements HDTPrivate {
 		ci.load(input);
 		String hdtFormat = ci.getFormat();
 		if(!hdtFormat.equals(HDTVocabulary.HDT_CONTAINER)) {
-			throw new IllegalFormatException("This software (v" + HDTVersion.HDT_VERSION + ".x.x) cannot open this version of HDT File (" + hdtFormat + ")");
+			throw new IllegalFormatException("This software (v" + HDTVersion.HDT_VERSION + ".x.x) cannot open this version of hdt File (" + hdtFormat + ")");
 		}
 
 		// Load header
@@ -225,11 +225,11 @@ public class HDTImpl implements HDTPrivate {
 			f = new File(hdtFileName);
 
 			if(!f.exists()) {
-				System.err.println("We cannot map a gzipped HDT, decompressing into "+hdtFileName+" first.");
+				System.err.println("We cannot map a gzipped hdt, decompressing into "+hdtFileName+" first.");
 				IOUtil.decompressGzip(old, f);
-				System.err.println("Gzipped HDT successfully decompressed. You might want to delete "+old.getAbsolutePath()+" to save disk space.");
+				System.err.println("Gzipped hdt successfully decompressed. You might want to delete "+old.getAbsolutePath()+" to save disk space.");
 			} else {
-				System.err.println("We cannot map a gzipped HDT, using "+hdtFileName+" instead.");
+				System.err.println("We cannot map a gzipped hdt, using "+hdtFileName+" instead.");
 			}
 		}
 
@@ -243,7 +243,7 @@ public class HDTImpl implements HDTPrivate {
 		ci.load(input);
 		String hdtFormat = ci.getFormat();
 		if(!hdtFormat.equals(HDTVocabulary.HDT_CONTAINER)) {
-			throw new IllegalFormatException("This software (v" + HDTVersion.HDT_VERSION + ".x.x) cannot open this version of HDT File (" + hdtFormat + ")");
+			throw new IllegalFormatException("This software (v" + HDTVersion.HDT_VERSION + ".x.x) cannot open this version of hdt File (" + hdtFormat + ")");
 		}
 
 		// Load header
@@ -290,7 +290,7 @@ public class HDTImpl implements HDTPrivate {
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see hdt.HDT#saveToHDT(java.io.OutputStream)
+	 * @see hdt.hdt#saveToHDT(java.io.OutputStream)
 	 */
 	@Override
 	public void saveToHDT(OutputStream output, ProgressListener listener) throws IOException {
@@ -318,7 +318,7 @@ public class HDTImpl implements HDTPrivate {
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see hdt.HDT#saveToHDT(java.io.OutputStream)
+	 * @see hdt.hdt#saveToHDT(java.io.OutputStream)
 	 */
 	@Override
 	public void saveToHDT(String fileName, ProgressListener listener) throws IOException {
@@ -334,7 +334,7 @@ public class HDTImpl implements HDTPrivate {
 	public IteratorTripleString search(CharSequence subject, CharSequence predicate, CharSequence object) throws NotFoundException {
 
 		if(isClosed) {
-			throw new IllegalStateException("Cannot search an already closed HDT");
+			throw new IllegalStateException("Cannot search an already closed hdt");
 		}
 		
 		// Conversion from TripleString to TripleID
@@ -384,7 +384,7 @@ public class HDTImpl implements HDTPrivate {
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see hdt.HDT#getHeader()
+	 * @see hdt.hdt#getHeader()
 	 */
 	@Override
 	public Header getHeader() {
@@ -394,7 +394,7 @@ public class HDTImpl implements HDTPrivate {
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see hdt.HDT#getDictionary()
+	 * @see hdt.hdt#getDictionary()
 	 */
 	@Override
 	public Dictionary getDictionary() {
@@ -404,7 +404,7 @@ public class HDTImpl implements HDTPrivate {
 	/*
 	 * (non-Javadoc)
 	 *
-	 * @see hdt.HDT#getTriples()
+	 * @see hdt.hdt#getTriples()
 	 */
 	@Override
 	public Triples getTriples() {
@@ -412,7 +412,7 @@ public class HDTImpl implements HDTPrivate {
 	}
 
 	/* (non-Javadoc)
-	 * @see hdt.hdt.HDT#getSize()
+	 * @see hdt.hdt.hdt#getSize()
 	 */
 	@Override
 	public long size() {
@@ -461,7 +461,7 @@ public class HDTImpl implements HDTPrivate {
 	}
 
 	/* (non-Javadoc)
-	 * @see hdt.hdt.HDT#generateIndex(hdt.listener.ProgressListener)
+	 * @see hdt.hdt.hdt#generateIndex(hdt.listener.ProgressListener)
 	 */
 	@Override
 	public void loadOrCreateIndex(ProgressListener listener) {
@@ -541,7 +541,7 @@ public class HDTImpl implements HDTPrivate {
 	// For debugging
 	@Override
 	public String toString() {
-		return String.format("HDT[file=%s,#triples=%d]", hdtFileName, triples.getNumberOfElements());
+		return String.format("hdt[file=%s,#triples=%d]", hdtFileName, triples.getNumberOfElements());
 	}
 	
 	public String getHDTFileName() {

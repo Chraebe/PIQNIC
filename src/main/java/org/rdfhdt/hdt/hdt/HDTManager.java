@@ -28,7 +28,7 @@ public abstract class HDTManager {
 					Class<?> managerImplClass = Class.forName("org.rdfhdt.hdt.hdt.HDTManagerImpl");
 					instance = (HDTManager) managerImplClass.newInstance();
 				} catch (ClassNotFoundException e) {
-					throw new RuntimeException("Class org.rdfhdt.hdt.hdt.HDTManagerImpl not found. Did you include the HDT implementation jar?");
+					throw new RuntimeException("Class org.rdfhdt.hdt.hdt.HDTManagerImpl not found. Did you include the hdt implementation jar?");
 				} catch (InstantiationException e) {
 					throw new RuntimeException("Cannot create implementation for HDTManager. Does the class org.rdfhdt.hdt.hdt.HDTManagerImpl inherit from HDTManager?");
 				} catch (IllegalAccessException e) {
@@ -44,7 +44,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Load an HDT file into memory to use it. NOTE: Use this method to go through all elements. If you plan 
+	 * Load an hdt file into memory to use it. NOTE: Use this method to go through all elements. If you plan
 	 * to do queries, use loadIndexedHDT() instead.
 	 * @param hdtFileName
 	 * @param listener Listener to get notified of loading progress. Can be null if no notifications needed.
@@ -56,7 +56,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Load an HDT file into memory to use it. NOTE: Use this method to go through all elements. If you plan 
+	 * Load an hdt file into memory to use it. NOTE: Use this method to go through all elements. If you plan
 	 * to do queries, use loadIndexedHDT() instead.
 	 * @param hdtFileName
 	 * @return
@@ -67,7 +67,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Map an HDT file into memory to use it. This method does not load the whole file into memory,
+	 * Map an hdt file into memory to use it. This method does not load the whole file into memory,
 	 * it lets the OS to handle memory pages as desired. Therefore it uses less memory but can be slower
 	 * for querying because it needs to load those blocks from disk.
 	 * NOTE: Use this method to go through all elements. If you plan to do queries, use mapIndexedHDT() instead.
@@ -81,7 +81,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Map an HDT file into memory to use it. This method does not load the whole file into memory,
+	 * Map an hdt file into memory to use it. This method does not load the whole file into memory,
 	 * it lets the OS to handle memory pages as desired. Therefore it uses less memory but can be slower
 	 * for querying because it needs to load those blocks from disk.
 	 * NOTE: Use this method to go through all elements. If you plan to do queries, use mapIndexedHDT() instead.
@@ -94,7 +94,7 @@ public abstract class HDTManager {
 	}
 
 	/**
-	 * Load an HDT from an InputStream (File, socket...). NOTE: Use this method to go through all elements. If you plan 
+	 * Load an hdt from an InputStream (File, socket...). NOTE: Use this method to go through all elements. If you plan
 	 * to do queries, use loadIndexedHDT() instead. 
 	 * @param hdtFile
 	 * @param listener Listener to get notified of loading progress. Can be null if no notifications needed.
@@ -106,7 +106,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Load an HDT from an InputStream (File, socket...). NOTE: Use this method to go through all elements. If you plan 
+	 * Load an hdt from an InputStream (File, socket...). NOTE: Use this method to go through all elements. If you plan
 	 * to do queries, use loadIndexedHDT() instead. 
 	 * @param hdtFile
 	 * @return
@@ -117,7 +117,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Load an HDT File, and load/create additional indexes to support all kind of queries efficiently.
+	 * Load an hdt File, and load/create additional indexes to support all kind of queries efficiently.
 	 * @param hdtFileName
 	 * @param listener Listener to get notified of loading progress. Can be null if no notifications needed.
 	 * @return
@@ -128,7 +128,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Load an HDT File, and load/create additional indexes to support all kind of queries efficiently.
+	 * Load an hdt File, and load/create additional indexes to support all kind of queries efficiently.
 	 * @param hdtFileName
 	 * @return
 	 * @throws IOException 
@@ -138,7 +138,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Maps an HDT File into virtual memory, and load/create additional indexes to support all kind of queries efficiently.
+	 * Maps an hdt File into virtual memory, and load/create additional indexes to support all kind of queries efficiently.
 	 * @param hdtFileName
 	 * @param listener Listener to get notified of loading progress. Can be null if no notifications needed.
 	 * @return
@@ -149,7 +149,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Maps an HDT File into virtual memory, and load/create additional indexes to support all kind of queries efficiently.
+	 * Maps an hdt File into virtual memory, and load/create additional indexes to support all kind of queries efficiently.
 	 * @param hdtFileName
 	 * @return
 	 * @throws IOException 
@@ -159,7 +159,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Load an HDT file from InputStream, and create additional indexes to support all kind of queries efficiently.
+	 * Load an hdt file from InputStream, and create additional indexes to support all kind of queries efficiently.
 	 * @param hdtFileName
 	 * @param listener Listener to get notified of loading progress. Can be null if no notifications needed.
 	 * @return
@@ -170,7 +170,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Load an HDT file from InputStream, and create additional indexes to support all kind of queries efficiently.
+	 * Load an hdt file from InputStream, and create additional indexes to support all kind of queries efficiently.
 	 * @param hdtFileName
 	 * @return
 	 * @throws IOException 
@@ -180,7 +180,7 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Return an indexed HDT that is efficient for all kind of queries, given a not indexed HDT.
+	 * Return an indexed hdt that is efficient for all kind of queries, given a not indexed hdt.
 	 * @param hdt
 	 * @param listener Listener to get notified of loading progress. Can be null if no notifications needed.
 	 * @return
@@ -190,11 +190,11 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Create an HDT file from an RDF file.
+	 * Create an hdt file from an RDF file.
 	 * @param rdfFileName File name.
 	 * @param baseURI Base URI for the dataset.
 	 * @param rdfNotation Format of the source RDF File (NTriples, N3, RDF-XML...)
-	 * @param hdtFormat Parameters to tune the generated HDT.
+	 * @param hdtFormat Parameters to tune the generated hdt.
 	 * @param listener Listener to get notified of loading progress. Can be null if no notifications needed.
 	 * @return
 	 * @throws IOException 
@@ -205,10 +205,10 @@ public abstract class HDTManager {
 	}
 	
 	/**
-	 * Create an HDT file from an RDF file.
+	 * Create an hdt file from an RDF file.
 	 * @param iterator A provider of triples. Must implement hasNext(), next() and estimatedNumResults.
 	 * @param baseURI Base URI for the dataset.
-	 * @param hdtFormat Parameters to tune the generated HDT.
+	 * @param hdtFormat Parameters to tune the generated hdt.
 	 * @param listener Listener to get notified of loading progress. Can be null if no notifications needed.
 	 * @return
 	 * @throws IOException  

@@ -118,7 +118,7 @@ public class ProfilingUtil {
 	}
 	
 	/**
-	 * A method for getting a property denoting a size in bytes (like size of cache for example)
+	 * A method for getting a property denoting a size in bytes (like size of put for example)
 	 * 
 	 * If the property is not set the method returns -1, else it checks if it ends with a
 	 * k, K, m, M, g or G and multiplies the number before with the appropriate power of 2 before

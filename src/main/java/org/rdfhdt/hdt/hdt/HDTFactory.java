@@ -34,25 +34,25 @@ import org.rdfhdt.hdt.options.HDTOptions;
 import org.rdfhdt.hdt.options.HDTSpecification;
 
 /**
- * Factory that creates HDT objects
+ * Factory that creates hdt objects
  * 
  */
 public class HDTFactory {
 	private HDTFactory() {}
 	
 	/**
-	 * Creates a default HDT
+	 * Creates a default hdt
 	 * 
-	 * @return HDT
+	 * @return hdt
 	 */
 	public static HDT createHDT() {
 		return new HDTImpl(new HDTSpecification());
 	}
 
 	/**
-	 * Creates an HDT with the specified spec
+	 * Creates an hdt with the specified spec
 	 * 
-	 * @return HDT
+	 * @return hdt
 	 */
 	public static HDT createHDT(HDTOptions spec) {
 		return new HDTImpl(spec);

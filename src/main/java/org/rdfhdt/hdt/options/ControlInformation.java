@@ -76,7 +76,7 @@ public class ControlInformation extends HDTOptionsBase implements ControlInfo {
 		CRCOutputStream out = new CRCOutputStream(output, new CRC16());
 		
 		// Cookie
-		IOUtil.writeString(out, "$HDT");
+		IOUtil.writeString(out, "$hdt");
 		
 		// Type
 		IOUtil.writeByte(out, (byte)type.ordinal());
@@ -103,8 +103,8 @@ public class ControlInformation extends HDTOptionsBase implements ControlInfo {
        
 		// Cookie
         String magic = IOUtil.readChars(in, 4);
-        if(!magic.equals("$HDT")) {
-        	 throw new IOException("Non-HDT Section");
+        if(!magic.equals("$hdt")) {
+        	 throw new IOException("Non-hdt Section");
         }
         
         // Type

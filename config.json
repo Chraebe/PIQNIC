@@ -1,0 +1,15 @@
+{
+  "replication" : 4,
+  "ports" : {
+    "listener" : 7625,
+    "cli" : 7626,
+    "test" : 7627
+  },
+  "maxFragments" : 200,
+  "timeToLive" : 5,
+  "shuffleLength" : 4,
+  "neighbours" : 5,
+  "minutesTilShuffle" : 10,
+  "maxDelay" : 500,
+  "version" : "0.1-SNAPSHOT"
+}

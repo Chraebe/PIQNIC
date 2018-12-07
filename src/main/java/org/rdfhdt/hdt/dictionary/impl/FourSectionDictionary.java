@@ -133,7 +133,7 @@ public class FourSectionDictionary extends BaseDictionary {
 		predicates = DictionarySectionFactory.loadFrom(in, f, iListener);
 		objects = DictionarySectionFactory.loadFrom(in, f, iListener);
 		
-		// Use cache only for predicates. Preload only up to 100K predicates.
+		// Use put only for predicates. Preload only up to 100K predicates.
 		// FIXME: DISABLED
 //		predicates = new DictionarySectionCacheAll(predicates, predicates.getNumberOfElements()<100000);
 	}

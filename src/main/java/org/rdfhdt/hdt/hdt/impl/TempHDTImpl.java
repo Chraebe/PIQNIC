@@ -47,8 +47,8 @@ import org.rdfhdt.hdt.triples.TriplesFactory;
 public class TempHDTImpl implements TempHDT {
 
 	protected final Header header;
-	protected final TempDictionary dictionary;
-	protected final TempTriples triples;
+	protected TempDictionary dictionary;
+	protected TempTriples triples;
 
 	protected final String baseUri;
 	

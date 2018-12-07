@@ -563,7 +563,7 @@ public class BitmapTriples implements TriplesPrivate {
 		
 		ArrayList<List<Pair>> list=new ArrayList<List<Pair>>();
 		
-		System.out.println("Generating HDT Index for ?PO, and ??O queries.");
+		System.out.println("Generating hdt Index for ?PO, and ??O queries.");
 		// Generate lists
 		long total=seqZ.getNumberOfElements();
 		for(long i=0;i<total;i++) {
@@ -735,7 +735,7 @@ public class BitmapTriples implements TriplesPrivate {
 		
 		long numTriples = ci.getInt("numTriples");
 		if(this.getNumberOfElements()!=numTriples) {
-			throw new IllegalFormatException("This index is not associated to the HDT file");
+			throw new IllegalFormatException("This index is not associated to the hdt file");
 		}
 		
 		TripleComponentOrder indexOrder = TripleComponentOrder.values()[(int)ci.getInt("order")];
@@ -773,7 +773,7 @@ public class BitmapTriples implements TriplesPrivate {
 		
 		long numTriples = ci.getInt("numTriples");
 		if(this.getNumberOfElements()!=numTriples) {
-			throw new IllegalFormatException("This index is not associated to the HDT file");
+			throw new IllegalFormatException("This index is not associated to the hdt file");
 		}
 		
 		TripleComponentOrder indexOrder = TripleComponentOrder.values()[(int)ci.getInt("order")];

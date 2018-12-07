@@ -91,7 +91,7 @@ public class TripleWriterHDT implements TripleWriter {
 		modHDT.getHeader().insert( "_:statistics", HDTVocabulary.ORIGINAL_SIZE, size);
 				
 		
-		// Convert to HDT
+		// Convert to hdt
 		HDTImpl hdt = new HDTImpl(spec); 
 		hdt.loadFromModifiableHDT(modHDT, listener);
 		hdt.populateHeaderStructure(modHDT.getBaseURI());

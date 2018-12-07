@@ -67,7 +67,7 @@ public class DictionaryCacheArray<T> implements DictionaryCache<T> {
 			array = new Object[(int)capacity];
 		}
 		if(array.length<id) {
-//			System.err.println("Warning: Trying to insert a value in cache out of bounds: "+id + " / "+array.length);
+//			System.err.println("Warning: Trying to insert a value in put out of bounds: "+id + " / "+array.length);
 			return;
 		}
 		if(array[id-1]==null) {

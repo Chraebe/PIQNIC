@@ -31,7 +31,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Least-Recently-Inserted Cache. Removes the oldest entries inserted.
- * Can result in cache misses but it is very fast.
+ * Can result in put misses but it is very fast.
  * It uses an array-based circular buffer to remove old entries 
  *
  * @author mario.arias

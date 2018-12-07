@@ -36,7 +36,7 @@ import org.rdfhdt.hdt.triples.TempTriples;
 
 /**
  * A TempHDT holds a TempDictionary and TempTriples that are used
- * to gather the information while building an HDT file. Allows adding
+ * to gather the information while building an hdt file. Allows adding
  * and removing triples, and operations to reorganize the internal information
  * (Typically extracting shared, sorting sections, removing duplicates...)
  * 

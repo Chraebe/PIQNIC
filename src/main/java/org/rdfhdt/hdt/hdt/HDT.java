@@ -39,7 +39,7 @@ import org.rdfhdt.hdt.triples.Triples;
 
 
 /**
- * Interface that specifies the methods for a HDT implementation
+ * Interface that specifies the methods for a hdt implementation
  * 
  * @author mario.arias
  * 
@@ -47,28 +47,28 @@ import org.rdfhdt.hdt.triples.Triples;
 public interface HDT extends RDFAccess,Closeable {
 
 	/**
-	 * Gets the header of the HDT
+	 * Gets the header of the hdt
 	 * 
 	 * @return Header
 	 */
 	Header getHeader();
 
 	/**
-	 * Gets the dictionary of the HDT
+	 * Gets the dictionary of the hdt
 	 * 
 	 * @return Dictionary
 	 */
 	Dictionary getDictionary();
 
 	/**
-	 * Gets the triples of the HDT
+	 * Gets the triples of the hdt
 	 * 
 	 * @return Triples
 	 */
 	Triples getTriples();
 		
 	/**
-	 * Saves to OutputStream in HDT format
+	 * Saves to OutputStream in hdt format
 	 * 
 	 * @param output
 	 *            The OutputStream to save to
@@ -76,7 +76,7 @@ public interface HDT extends RDFAccess,Closeable {
 	void saveToHDT(OutputStream output, ProgressListener listener) throws IOException;
 
 	/**
-	 * Saves to a file in HDT format
+	 * Saves to a file in hdt format
 	 * 
 	 * @param output
 	 *            The OutputStream to save to
