@@ -6,216 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d166cde4-cd73-4da8-be6d-771b34ce66c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/util/Constituents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software.iml" beforeDir="false" afterPath="$PROJECT_DIR$/software.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/IPeerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/IPeerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/Dataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/Dataset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificMetaFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificMetaFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheArrayWeak.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheHash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheLRI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheLRU.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheNone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/AdjacencyList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/Bitmap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/Bitmap375.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/Bitmap64.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/BitmapFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/ModifiableBitmap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/integer/VByte.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/DeflateIntegerIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/DynamicSequence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/Sequence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceInt32.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceInt64.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceLog64.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceLog64Big.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceLog64Map.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/Dictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionaryFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionaryPrivate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionarySection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionarySectionPrivate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionaryUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/TempDictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/TempDictionarySection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/BaseDictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/BaseTempDictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/DictionaryIDMapping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/DictionaryPFCOptimizedExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/FourSectionDictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/FourSectionDictionaryBig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/HashDictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/PSFCFourSectionDictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/PSFCTempDictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/DictionarySectionCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/DictionarySectionCacheAll.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/DictionarySectionCachePerThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/DictionarySectionFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/HashDictionarySection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCDictionarySection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCDictionarySectionBig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCDictionarySectionBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCDictionarySectionMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCOptimizedExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/DictionaryRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/DictionarySectionRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/RDFNotation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/ResultEstimationType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/TripleComponentOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/TripleComponentRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/CRCException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/IllegalFormatException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/NotImplementedException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/ParserException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTPrivate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTVersion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTVocabulary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/TempHDT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/TempHDTImporter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/HDTImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/ModeOfLoading.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/TempHDTImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/TempHDTImporterOnePass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/TempHDTImporterTwoPass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/writer/TripleWriterFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/writer/TripleWriterHDT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/writer/TripleWriterNtriples.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/writer/TripleWriterTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/Header.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/HeaderFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/HeaderPrivate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/HeaderUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/PlainHeader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/PlainHeaderIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/DictionaryTranslateIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/DictionaryTranslateIteratorBuffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/RoleIteratorTripleID.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/SequentialSearchIteratorTripleID.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ArrayIndexIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ArrayIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ArrayIteratorCharSequence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ArrayIteratorG.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/DedupIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/Filter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/Iter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/IteratorConcat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ListTripleIDIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/MergedIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/MergedReduceIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/MultiMerge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/PrefetchIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/RangeIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/Reducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ReducerLeft.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/RepeatApplyIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/SequenceIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/SeveralIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/SideEffect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/SortedReduceIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/Transform.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/listener/ProgressListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/listener/ProgressOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/ControlInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/ControlInformation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/HDTOptions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/HDTOptionsBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/HDTSpecification.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/RDFAccess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/RDFParserCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/RDFParserFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/RDFStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/TripleWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/JenaModelIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/JenaNodeCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/JenaNodeFormatter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserRAR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserRIOT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserSimple.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserTar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserZip.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/IteratorTripleID.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/IteratorTripleString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TempTriples.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleID.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleIDComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleIDComparatorSPO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleStringComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/Triples.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TriplesFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TriplesPrivate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriples.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIteratorY.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIteratorYFOQ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIteratorZ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIteratorZFOQ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/EmptyTriplesIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/PredicateIndex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/PredicateIndexArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/TripleOrderConvert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/TriplesList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/BitUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/LRUCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/Mutable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/ProfilingUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/RDFInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/StopWatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/StringUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/UnicodeEscape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRC16.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRC32.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRC8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRCInputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRCOutputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/ByteBufferInputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/CloseInputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/CountInputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/CountOutputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/DummyOutputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/IOUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/NonCloseInputStream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/listener/IntermediateListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/listener/ListenerUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/ByteStringUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/CharSequenceComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/CompactString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/DelayedString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/ReplazableString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/UnicodeEscape.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -360,7 +151,7 @@
           <entry key="java" value="310" />
           <entry key="md" value="2" />
           <entry key="tt" value="1" />
-          <entry key="xml" value="4" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -369,7 +160,7 @@
           <entry key="JAVA" value="310" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="XML" value="4" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -428,14 +219,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1082">
-              <caret line="432" column="79" selection-start-line="432" selection-start-column="79" selection-end-line="432" selection-end-column="79" />
+            <state relative-caret-position="842">
+              <caret line="416" column="46" lean-forward="true" selection-start-line="416" selection-start-column="46" selection-end-line="417" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -563,9 +363,9 @@
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -712,7 +512,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547573730175" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547573885068" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -783,12 +583,12 @@
       <workItem from="1543674968922" duration="191638000" />
       <workItem from="1544373365162" duration="11787000" />
       <workItem from="1545051912843" duration="3392000" />
-      <workItem from="1546421038541" duration="48753000" />
+      <workItem from="1546421038541" duration="49023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="620434000" />
+    <option name="totallyTimeSpent" value="620704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1213,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
@@ -1282,11 +1075,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1082">
-          <caret line="432" column="79" selection-start-line="432" selection-start-column="79" selection-end-line="432" selection-end-column="79" />
+        <state relative-caret-position="842">
+          <caret line="416" column="46" lean-forward="true" selection-start-line="416" selection-start-column="46" selection-end-line="417" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
         </state>
       </provider>
     </entry>
