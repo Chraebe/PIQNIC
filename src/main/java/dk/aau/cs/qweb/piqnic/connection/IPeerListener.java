@@ -19,7 +19,7 @@ public interface IPeerListener {
 
     void processTriplePatternBound(Scanner scanner, PrintWriter writer);
 
-    void fragmentDependence(Scanner scanner, PrintWriter writer);
-
     void estimateCardinality(Scanner scanner, PrintWriter writer);
+
+    void passJoin(Scanner scanner, PrintWriter writer);
 }

@@ -1,6 +1,5 @@
 package dk.aau.cs.qweb.piqnic;
 
-import com.google.gson.Gson;
 import dk.aau.cs.qweb.piqnic.client.ClientFactory;
 import dk.aau.cs.qweb.piqnic.client.IClient;
 import dk.aau.cs.qweb.piqnic.config.Configuration;
@@ -10,7 +9,6 @@ import dk.aau.cs.qweb.piqnic.data.Dataset;
 import dk.aau.cs.qweb.piqnic.data.FragmentBase;
 import dk.aau.cs.qweb.piqnic.data.FragmentFactory;
 import dk.aau.cs.qweb.piqnic.data.MetaFragmentBase;
-import dk.aau.cs.qweb.piqnic.jena.graph.PiqnicGraph;
 import dk.aau.cs.qweb.piqnic.network.NetworkManager;
 import dk.aau.cs.qweb.piqnic.node.INode;
 import dk.aau.cs.qweb.piqnic.node.NodeFactory;
@@ -19,16 +17,12 @@ import dk.aau.cs.qweb.piqnic.peer.IPeer;
 import dk.aau.cs.qweb.piqnic.peer.Peer;
 import dk.aau.cs.qweb.piqnic.test.TestConstants;
 import dk.aau.cs.qweb.piqnic.util.Triple;
-import org.apache.jena.query.*;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
 
 import java.io.*;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
@@ -58,27 +52,6 @@ public class PiqnicClient {
     }
 
     public static void main(String[] args) throws IOException {
-        String sparql = "SELECT DISTINCT ?party ?page  WHERE {\n" +
-                "   <http://dbpedia.org/resource/Barack_Obama> <http://dbpedia.org/ontology/party> ?party .\n" +
-                "   ?x <http://data.nytimes.com/elements/topicPage> ?page .\n" +
-                "   ?x <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Barack_Obama> .\n" +
-                "}";
-
-        Query query = QueryFactory.create(sparql);
-        final PiqnicGraph graph = new PiqnicGraph();
-        Model model = ModelFactory.createModelForGraph(graph);
-        final QueryExecution executor = QueryExecutionFactory.create(query, model);
-        final ResultSet rs = executor.execSelect();
-        while (rs.hasNext()) {
-            rs.next();
-        }
-
-
-
-
-
-
-
         if (args.length == 0) {
             System.out.println("Usage: java -jar [filename].jar [config.json]");
             return;
@@ -140,7 +113,7 @@ public class PiqnicClient {
 
             List<Triple> cs = getRandomClients(clients);
             for (Triple t : cs) {
-                IPeer peer = new Peer(nodeInstance.getIp(), Integer.parseInt(t.getSubject()), UUID.fromString(t.getObject()));
+                Peer peer = new Peer(nodeInstance.getIp(), Integer.parseInt(t.getSubject()), UUID.fromString(t.getObject()));
                 nodeInstance.addNeighbour(peer);
             }
 
@@ -166,8 +139,8 @@ public class PiqnicClient {
                 while ((ln = in.readLine()) != null) {
                     String[] ws = ln.split(";");
 
-                    MetaFragmentBase fragment = FragmentFactory.createMetaFragment(baseUri, ws[0], new File(base + "/" + baseUri + "/" + ws[1] + ".hdt"), new HashSet<>());
-                    fragment.addPeers(addFragment(fragment));
+                    MetaFragmentBase fragment = FragmentFactory.createMetaFragment(baseUri, ws[0], new File(base + "/" + baseUri + "/" + ws[1] + ".hdt"), new Peer((PiqnicNode)nodeInstance), new HashSet<>());
+                    fragment.addPeers(addFragment(fragment, TestConstants.REPLICATION));
                     dataset.addFragment(fragment);
                 }
                 in.close();
@@ -194,11 +167,10 @@ public class PiqnicClient {
                 nodeInstance.addFragmentBase(fragmentBase);
             }*/
         }
-
         //if (test) PiqnicClient.manager.start();
     }
 
-    private static List<IPeer> addFragment(FragmentBase fragmentBase) throws IOException {
+    private static List<IPeer> addFragment(FragmentBase fragmentBase, int ttl) throws IOException {
         Socket socket;
         try {
             socket = new Socket(nodeInstance.getIp(), nodeInstance.getPort());
@@ -209,7 +181,8 @@ public class PiqnicClient {
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
         BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         out.println(7);
-        out.println(Configuration.instance.getTimeToLive() + ";" + fragmentBase.getBaseUri() + ";" + fragmentBase.getId() + ";" + fragmentBase.getFile().getAbsolutePath());
+        out.println(fragmentBase.getOwner().getAddress() + ";" + fragmentBase.getOwner().getPort() + ";" + fragmentBase.getOwner().getId());
+        out.println(ttl + ";" + fragmentBase.getBaseUri() + ";" + fragmentBase.getId() + ";" + fragmentBase.getFile().getAbsolutePath());
 
         List<IPeer> ret = new ArrayList<>();
         String line;

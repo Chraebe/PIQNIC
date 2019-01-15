@@ -6,7 +6,11 @@ import dk.aau.cs.qweb.piqnic.PiqnicClient;
 import dk.aau.cs.qweb.piqnic.config.Configuration;
 import dk.aau.cs.qweb.piqnic.data.Dataset;
 import dk.aau.cs.qweb.piqnic.data.FragmentBase;
+import dk.aau.cs.qweb.piqnic.data.FragmentFactory;
+import dk.aau.cs.qweb.piqnic.data.MetaFragmentBase;
+import dk.aau.cs.qweb.piqnic.jena.PiqnicJenaConstants;
 import dk.aau.cs.qweb.piqnic.jena.graph.PiqnicGraph;
+import dk.aau.cs.qweb.piqnic.node.PiqnicNode;
 import dk.aau.cs.qweb.piqnic.peer.IPeer;
 import dk.aau.cs.qweb.piqnic.peer.Peer;
 import dk.aau.cs.qweb.piqnic.util.*;
@@ -31,6 +35,7 @@ import java.io.*;
 import java.lang.reflect.Type;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.charset.Charset;
 import java.sql.Timestamp;
 import java.util.*;
 
@@ -135,7 +140,22 @@ public class CLI implements IClient {
         else if (line.startsWith(":n")) neighbours();
         else if (line.startsWith(":s")) shuffle();
         else if (line.startsWith(":d")) datasets();
+        else if (line.startsWith(":c")) constituents();
         else help();
+    }
+
+    private void constituents() {
+        PrintWriter writer = ((ClientThread) Thread.currentThread()).writer;
+        for (IPeer peer : PiqnicClient.nodeInstance.getNeighbours()) {
+            writer.println("For peer " + peer.getPort());
+            System.out.println("Peer " + peer.getPort());
+            try {
+                peer.getConstituents();
+            } catch (IOException e) {
+            }
+            System.out.println();
+        }
+        writer.println("Done.");
     }
 
     private void shuffle() {
@@ -215,136 +235,64 @@ public class CLI implements IClient {
             return;
         }
 
-        /*String[] words = input.split(" ");
-        Socket socket = new Socket(words[0], Integer.parseInt(words[1]));
-        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-        BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
-        out.println("1 " + PiqnicClient.nodeInstance.getId() + " " + PiqnicClient.nodeInstance.getIp() + " " + PiqnicClient.nodeInstance.getPort());
-        String response = in.readLine();
-
-        if (response.startsWith("2")) {
-            String[] w = response.split(" ");
-            UUID id = UUID.fromString(w[1]);
-
-            String idString = response.substring(response.indexOf(";;") + 2);
-
-            Type type = new TypeToken<List<UUID>>() {
-            }.getType();
-            List<UUID> ids = gson.fromJson(idString, type);
-
-            PiqnicClient.nodeInstance.addPeer(new Peer(words[0], Integer.parseInt(words[1]), id, new Timestamp(System.currentTimeMillis()), ids));
-
-            String string = response.substring(response.indexOf("["), response.indexOf(";;") - 1);
-            type = new TypeToken<List<Fragment>>() {
-            }.getType();
-            List<Fragment> fragments = gson.fromJson(string, type);
-
-            PiqnicClient.nodeInstance.addFragments(fragments);
-            PiqnicClient.manager.start();
-            PiqnicClient.nodeInstance.updateDatastore();
-            PiqnicClient.nodeInstance.recalculateNeighbours();
-        } else if (response.startsWith("E")) {
-            socket.close();
-            writer.println("Unknown node");
-            startup(scanner);
-        }
-        socket.close();*/
-
-        //Todo Fix when added the join function
+        String[] words = input.split(" ");
+        Peer p = new Peer(words[0], Integer.parseInt(words[1]), UUID.randomUUID());
+        p.join(new Peer((PiqnicNode)PiqnicClient.nodeInstance));
     }
 
     @Override
     public void addHDTFile(String filename) throws IOException {
-        //Todo Make me
-        /*PrintWriter writer = ((ClientThread) Thread.currentThread()).writer;
         HDT hdt = HDTManager.mapHDT(filename, ProgressOut.getInstance());
-        //Dataset dataset = new Dataset(filename);
-        getFragments(hdt);
+        createDataset(hdt);
         hdt.close();
-        writer.println("Done adding fragments...");*/
     }
 
     @Override
     public void addRDFFile(String filename) throws IOException {
-        //Todo Make me
-        /*HDT hdt;
+        HDT hdt;
         try {
             hdt = HDTManager.generateHDT(filename, "http://qweb.cs.aau.dk/piqnic/", RDFNotation.guess(filename), new HDTSpecification(), ProgressOut.getInstance());
-            //hdt.close();
-            //hdt = HDTManager.mapHDT(filename);
         } catch (ParserException e) {
             System.out.println("Failed to add file: " + e.getMessage());
             return;
         }
-        getFragments(hdt);
-        hdt.close();*/
+        createDataset(hdt);
+        hdt.close();
     }
 
-    private void getFragments(HDT hdt) throws IOException {
-        /*PrintWriter writer = ((ClientThread) Thread.currentThread()).writer;
+    private String getRandomBaseUri() {
+        byte[] array = new byte[7];
+        new Random().nextBytes(array);
+        return "http://qweb.cs.aau.dk/piqnic/" + new String(array, Charset.forName("UTF-8"));
+    }
+
+    private void createDataset(HDT hdt) throws IOException {
+        Peer p = new Peer((PiqnicNode) PiqnicClient.nodeInstance);
+        Dataset dataset = new Dataset(getRandomBaseUri(), p);
+
+        PrintWriter writer = ((ClientThread) Thread.currentThread()).writer;
         Dictionary dictionary = hdt.getDictionary();
         DictionarySection predicateDictionary = dictionary.getPredicates();
 
-        Socket socket = new Socket(nodeInstance.getIp(), nodeInstance.getPort());
-        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-        BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
         for (int i = 1; i < predicateDictionary.getNumberOfElements() + 1; i++) {
             String pred = charSequenceToString(predicateDictionary.extract(i));
+            writer.println("Adding fragment with predicate " + pred);
+
             IteratorTripleID iterator = hdt.getTriples().search(new TripleID(0, dictionary.stringToId(pred, TripleComponentRole.PREDICATE), 0));
 
-            Fragment fragment = new Fragment(pred);
+            FragmentBase fragment = FragmentFactory.createFragment(dataset.getUri(), pred, new File("null.hdt"), p);
+            List<TripleString> triples = new ArrayList<>();
             while (iterator.hasNext()) {
-                TripleString triple = DictionaryUtil.tripleIDtoTripleString(dictionary, iterator.next());
-                fragment.addTriple(new Triple(charSequenceToString(triple.getSubject()), pred, charSequenceToString(triple.getObject())));
+                triples.add(DictionaryUtil.tripleIDtoTripleString(dictionary, iterator.next()));
             }
-
-            addFragment(fragment, out, in);
-            //dataset.addFragment(fragment);
+            Set<IPeer> peers = p.addFragmentInit(fragment, triples, Configuration.instance.getReplication());
+            MetaFragmentBase base = fragment.toMetaFragment(peers);
+            dataset.addFragment(base);
         }
 
-        List<UUID> ids = new ArrayList<>();
-        ids.add(PiqnicClient.nodeInstance.getId());
-        out.println("0 " + nodeInstance.getId() + " " + gson.toJson(ids));
-
-        String response = in.readLine();
-        if (response.startsWith("0")) {
-            writer.println("Done adding fragments...");
-        } else {
-            writer.println("Error adding fragments...");
-        }
-
-        socket.close();*/
+        PiqnicClient.nodeInstance.addDataset(dataset);
+        writer.println("Done adding fragments...");
     }
-
-    /*private void addFragment(Fragment f, PrintWriter out, BufferedReader in) throws IOException {
-        List<UUID> list = new ArrayList<>();
-        list.add(PiqnicClient.nodeInstance.getId());
-
-        out.println("5 " + nodeInstance.getId() + " " + gson.toJson(f) + " " + Configuration.instance.getReplication() + " " + gson.toJson(list));
-        //System.out.println("5 " + nodeInstance.getId() + " " + gson.toJson(f) + " " + Configuration.instance.getReplication() + " " + gson.toJson(list));
-
-        String response = in.readLine();
-        //System.out.println(response);
-        if (response.startsWith("6")) {
-            System.out.println("Added fragment with predicate " + f.getPredicate());
-        } else if (response.startsWith("E")) {
-            System.out.println("Error!");
-        }
-    }*/
-
-   /* private void addFragments(Iterator<Fragment> iterator) throws IOException {
-
-
-
-        int i = 0;
-        while (iterator.hasNext()) {
-
-        }
-
-
-    }*/
 
     private void writeResults(final PrintWriter outputStream, Query query, Model model) {
         long startTime = System.currentTimeMillis();
@@ -372,11 +320,13 @@ public class CLI implements IClient {
         }
 
         long endTime = System.currentTimeMillis();
-        outputStream.println("Done in " + (endTime - startTime) + "ms. Found " + num + " results.");
+        outputStream.println("Done in " + (endTime - startTime) + "ms. Found " + num + " results. No. of Messages=" + PiqnicJenaConstants.NM);
     }
 
     @Override
     public void queryNetwork(String sparql) throws IOException {
+        PiqnicJenaConstants.PROCESSOR = PiqnicJenaConstants.ProcessingType.FLOOD;
+        PiqnicJenaConstants.NM = 0;
         //System.out.println(sparql);
         PrintWriter writer = ((ClientThread) Thread.currentThread()).writer;
         Query query = QueryFactory.create(sparql);

@@ -37,8 +37,13 @@ public class PiqnicJenaFloodIterator extends NiceIterator<Triple> {
     private String bufferNext() {
         try {
             nextLine = reader.readLine();
+            if(nextLine != null && nextLine.startsWith(":")) {
+                PiqnicJenaConstants.NM+=Integer.parseInt(nextLine.substring(1));
+                return bufferNext();
+            }
             if((nextLine != null && nextLine.charAt(0) == ':') || seen.contains(nextLine))
                 return bufferNext();
+
             seen.add(nextLine);
             return nextLine;
         } catch (IOException e) {
@@ -72,7 +77,6 @@ public class PiqnicJenaFloodIterator extends NiceIterator<Triple> {
             throw new NoSuchElementException();
 
         if(PiqnicClient.test) {
-            PiqnicJenaConstants.NM++;
             PiqnicJenaConstants.NTB += nextLine.getBytes().length;
         }
         String[] str = nextLine.split(";;");

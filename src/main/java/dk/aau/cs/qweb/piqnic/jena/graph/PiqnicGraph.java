@@ -8,6 +8,7 @@ import dk.aau.cs.qweb.piqnic.jena.bind.PiqnicJenaBindIterator;
 import dk.aau.cs.qweb.piqnic.jena.down.PiqnicJenaDownIterator;
 import dk.aau.cs.qweb.piqnic.jena.solver.*;
 import dk.aau.cs.qweb.piqnic.jena.solver.cache.PiqnicCache;
+import dk.aau.cs.qweb.piqnic.test.TestConstants;
 import org.apache.jena.atlas.lib.Pair;
 import org.apache.jena.graph.Capabilities;
 import org.apache.jena.graph.GraphStatisticsHandler;
@@ -96,6 +97,7 @@ public class PiqnicGraph extends GraphBase {
                 out.println(str);
         }
         out.println("EOF");
+        PiqnicJenaConstants.NM++;
 
         return new PiqnicJenaBindIterator(in);
     }
@@ -118,6 +120,7 @@ public class PiqnicGraph extends GraphBase {
                 + jenaTriple.getPredicate().toString() + ";"
                 + jenaTriple.getObject().toString());
         out.println("");
+        PiqnicJenaConstants.NM++;
 
         return new PiqnicJenaFloodIterator(in, jenaTriple);
     }

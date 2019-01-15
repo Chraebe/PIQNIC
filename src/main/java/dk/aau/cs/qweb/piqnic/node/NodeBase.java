@@ -3,6 +3,7 @@ package dk.aau.cs.qweb.piqnic.node;
 import dk.aau.cs.qweb.piqnic.data.Dataset;
 import dk.aau.cs.qweb.piqnic.data.FragmentBase;
 import dk.aau.cs.qweb.piqnic.peer.IPeer;
+import dk.aau.cs.qweb.piqnic.peer.Peer;
 import dk.aau.cs.qweb.piqnic.util.Triple;
 
 import java.io.IOException;
@@ -14,7 +15,7 @@ public abstract class NodeBase implements INode {
     final int port;
     final List<Dataset> datasets = new ArrayList<>();
     final List<FragmentBase> fragments = new ArrayList<>();
-    List<IPeer> neighbours = new ArrayList<>();
+    List<Peer> neighbours = new ArrayList<Peer>();
 
     public NodeBase(UUID id, String ip, int port) {
         this.id = id;
@@ -38,12 +39,12 @@ public abstract class NodeBase implements INode {
     }
 
     @Override
-    public void addNeighbour(IPeer peer) {
+    public void addNeighbour(Peer peer) {
         neighbours.add(peer);
     }
 
     @Override
-    public void addNeighbours(List<IPeer> peers) {
+    public void addNeighbours(List<Peer> peers) {
         neighbours.addAll(peers);
     }
 
@@ -83,7 +84,12 @@ public abstract class NodeBase implements INode {
     }
 
     @Override
-    public void removePeer(IPeer peer) {
+    public void removeFragment(FragmentBase fragment) {
+        fragments.remove(fragment);
+    }
+
+    @Override
+    public void removePeer(Peer peer) {
         neighbours.remove(peer);
     }
 
@@ -93,11 +99,11 @@ public abstract class NodeBase implements INode {
     }
 
     @Override
-    public List<IPeer> getRandomPeers(int num) {
-        List<IPeer> ret = new ArrayList<>();
+    public List<Peer> getRandomPeers(int num) {
+        List<Peer> ret = new ArrayList<>();
         if (neighbours.size() == 0) return ret;
         if (neighbours.size() == 1) {
-            List<IPeer> rl = new ArrayList<>();
+            List<Peer> rl = new ArrayList<>();
             rl.add(neighbours.get(0));
             return rl;
         }
@@ -111,7 +117,24 @@ public abstract class NodeBase implements INode {
     }
 
     @Override
-    public List<IPeer> getNeighbours() {
+    public FragmentBase getFragment(String baseUri, String id) {
+        for(FragmentBase fragment : fragments) {
+            if(fragment.getBaseUri().equals(baseUri) && fragment.getId().equals(id))
+                return fragment;
+        }
+        return null;
+    }
+
+    @Override
+    public boolean hasFragment(FragmentBase fragment) {
+        for(FragmentBase f : fragments) {
+            if(f.getBaseUri().equals(fragment.getBaseUri()) && f.getId().equals(fragment.getId())) return true;
+        }
+        return false;
+    }
+
+    @Override
+    public List<Peer> getNeighbours() {
         return new ArrayList<>(neighbours);
     }
 

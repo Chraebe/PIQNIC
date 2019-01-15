@@ -1,11 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" line="278" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" line="17" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" line="251" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" line="21" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d166cde4-cd73-4da8-be6d-771b34ce66c8" name="Default Changelist" comment="" />
+    <list default="true" id="d166cde4-cd73-4da8-be6d-771b34ce66c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/util/Constituents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software.iml" beforeDir="false" afterPath="$PROJECT_DIR$/software.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/IPeerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/IPeerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/Dataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/Dataset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificMetaFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificMetaFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheArrayWeak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheHash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheLRI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheLRU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/cache/DictionaryCacheNone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/AdjacencyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/Bitmap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/Bitmap375.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/Bitmap64.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/BitmapFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/bitmap/ModifiableBitmap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/integer/VByte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/DeflateIntegerIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/DynamicSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/Sequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceInt32.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceInt64.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceLog64.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceLog64Big.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/compact/sequence/SequenceLog64Map.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/Dictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionaryFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionaryPrivate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionarySection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionarySectionPrivate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/DictionaryUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/TempDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/TempDictionarySection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/BaseDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/BaseTempDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/DictionaryIDMapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/DictionaryPFCOptimizedExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/FourSectionDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/FourSectionDictionaryBig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/HashDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/PSFCFourSectionDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/PSFCTempDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/DictionarySectionCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/DictionarySectionCacheAll.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/DictionarySectionCachePerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/DictionarySectionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/HashDictionarySection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCDictionarySection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCDictionarySectionBig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCDictionarySectionBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCDictionarySectionMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/dictionary/impl/section/PFCOptimizedExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/DictionaryRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/DictionarySectionRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/RDFNotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/ResultEstimationType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/TripleComponentOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/enums/TripleComponentRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/CRCException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/IllegalFormatException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/NotImplementedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/exceptions/ParserException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTPrivate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTVersion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/HDTVocabulary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/TempHDT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/TempHDTImporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/HDTImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/ModeOfLoading.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/TempHDTImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/TempHDTImporterOnePass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/impl/TempHDTImporterTwoPass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/writer/TripleWriterFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/writer/TripleWriterHDT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/writer/TripleWriterNtriples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/hdt/writer/TripleWriterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/Header.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/HeaderFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/HeaderPrivate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/HeaderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/PlainHeader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/header/PlainHeaderIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/DictionaryTranslateIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/DictionaryTranslateIteratorBuffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/RoleIteratorTripleID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/SequentialSearchIteratorTripleID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ArrayIndexIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ArrayIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ArrayIteratorCharSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ArrayIteratorG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/DedupIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/Filter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/Iter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/IteratorConcat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ListTripleIDIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/MergedIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/MergedReduceIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/MultiMerge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/PrefetchIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/RangeIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/Reducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/ReducerLeft.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/RepeatApplyIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/SequenceIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/SeveralIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/SideEffect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/SortedReduceIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/iterator/utils/Transform.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/listener/ProgressListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/listener/ProgressOut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/ControlInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/ControlInformation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/HDTOptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/HDTOptionsBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/HDTSpecification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/RDFAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/RDFParserCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/RDFParserFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/RDFStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/TripleWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/JenaModelIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/JenaNodeCreator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/JenaNodeFormatter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserRAR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserRIOT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserSimple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserTar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/rdf/parsers/RDFParserZip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/IteratorTripleID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/IteratorTripleString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TempTriples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleIDComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleIDComparatorSPO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TripleStringComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/Triples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TriplesFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/TriplesPrivate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIteratorY.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIteratorYFOQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIteratorZ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriplesIteratorZFOQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/EmptyTriplesIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/PredicateIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/PredicateIndexArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/TripleOrderConvert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/TriplesList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/BitUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/LRUCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/Mutable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/ProfilingUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/RDFInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/StopWatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/StringUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/UnicodeEscape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRC16.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRC32.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRC8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRCInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/crc/CRCOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/ByteBufferInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/CloseInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/CountInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/CountOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/DummyOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/IOUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/io/NonCloseInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/listener/IntermediateListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/listener/ListenerUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/ByteStringUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/CharSequenceComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/CompactString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/DelayedString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/ReplazableString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/util/string/UnicodeEscape.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,37 +324,52 @@
     <session id="-1540751322">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="2" />
           <entry key="dummy" value="18" />
-          <entry key="java" value="27600" />
+          <entry key="java" value="37994" />
+          <entry key="md" value="446" />
           <entry key="txt" value="24" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="27600" />
+          <entry key="JAVA" value="37994" />
+          <entry key="Markdown" value="446" />
           <entry key="PLAIN_TEXT" value="42" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="114" />
-          <entry key="java" value="230" />
+          <entry key="TESTT" value="1" />
+          <entry key="class" value="120" />
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="310" />
+          <entry key="md" value="2" />
+          <entry key="tt" value="1" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="114" />
-          <entry key="JAVA" value="230" />
+          <entry key="CLASS" value="120" />
+          <entry key="JAVA" value="310" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -151,23 +377,77 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="57" column="99" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="57" selection-end-column="99" />
+            <state relative-caret-position="277">
+              <caret line="141" column="64" selection-start-line="141" selection-start-column="64" selection-end-line="141" selection-end-column="64" />
               <folding>
-                <element signature="e#7613#7614#0" expanded="true" />
-                <element signature="e#7667#7668#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="5047">
+              <caret line="401" column="44" selection-start-line="401" selection-start-column="44" selection-end-line="401" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3392#3393#0" expanded="true" />
+                <element signature="e#3457#3458#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="34" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="653">
+              <caret line="410" column="9" selection-start-line="410" selection-start-column="9" selection-end-line="410" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#13532#13533#0" expanded="true" />
+                <element signature="e#13586#13587#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1082">
+              <caret line="432" column="79" selection-start-line="432" selection-start-column="79" selection-end-line="432" selection-end-column="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,79 +455,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2774">
-              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="150" column="27" lean-forward="true" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7779#7780#0" expanded="true" />
-                <element signature="e#7830#7831#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/QueryIterPiqnicDown.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="96" column="12" lean-forward="true" selection-start-line="96" selection-start-column="12" selection-end-line="97" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="76" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/PiqnicJenaDownIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="82" selection-end-column="9" />
+            <state relative-caret-position="287">
+              <caret line="262" column="4" selection-start-line="262" selection-start-column="4" selection-end-line="266" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -268,12 +477,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getConst</find>
-      <find>Failed to per</find>
-      <find>indexedHDT</find>
-      <find>HDTManager</find>
-      <find>geth</find>
-      <find>graphBaseFind</find>
       <find>size</find>
       <find>LDF</find>
       <find>HDT</find>
@@ -298,62 +501,71 @@
       <find>addPeer</find>
       <find>Not in dataset</find>
       <find>System.out.</find>
+      <find>jetty</find>
+      <find>Done</find>
+      <find>-1</find>
+      <find>sort</find>
+      <find>Todo</find>
+      <find>socket</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/target/config.json" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/util/FragmentBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/TestClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicCachedIterator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicCache.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/cache/PiqnicIntialCachedIterator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/cache/PiqnicInitialCachedIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/cache/PiqnicCache.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/visitor/PiqnicPredicateVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/IFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PrdicateSpecificMetaFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/Dataset.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/AbstractNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraphAssembler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/config/Configuration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicStatistics.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/QueryIterPiqnicDownBlock.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/PiqnicDownTripleBindings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/OpExecutorPiqnic.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/QueryIterPiqnicBindBlock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/IPeerListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicBindings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/ReorderTransformationPiqnic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/cache/PiqnicPredicateSpecificCachedIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/QueryIterPiqnicDown.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/exceptions/QueryInterruptedException.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/PiqnicBoundIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/QueryIterPiqnicBind.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/PiqnicJenaDownIterator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/HDTCloser.java" />
+        <option value="$PROJECT_DIR$/tt" />
+        <option value="$PROJECT_DIR$/TESTT" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/util/Constituents.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/Dataset.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/IPeerListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificMetaFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" />
       </list>
     </option>
   </component>
@@ -387,17 +599,18 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1973" />
-    <option name="y" value="32" />
-    <option name="width" value="2507" />
-    <option name="height" value="1408" />
+    <option name="x" value="1920" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -439,24 +652,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
               <item name="connection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -466,85 +661,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
               <item name="jena" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="jena" type="462c0819:PsiDirectoryNode" />
-              <item name="bind" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="jena" type="462c0819:PsiDirectoryNode" />
-              <item name="down" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="jena" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="jena" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="jena" type="462c0819:PsiDirectoryNode" />
-              <item name="solver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
@@ -582,17 +699,20 @@
               <item name="piqnic" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544184863567" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547573730175" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -660,12 +780,15 @@
       <workItem from="1540449093129" duration="266333000" />
       <workItem from="1542890273323" duration="74107000" />
       <workItem from="1543448037462" duration="23592000" />
-      <workItem from="1543674968922" duration="182904000" />
+      <workItem from="1543674968922" duration="191638000" />
+      <workItem from="1544373365162" duration="11787000" />
+      <workItem from="1545051912843" duration="3392000" />
+      <workItem from="1546421038541" duration="48753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="547768000" />
+    <option name="totallyTimeSpent" value="620434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,7 +803,7 @@
     <frame x="1973" y="32" width="2507" height="1408" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11986997" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12230801" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -689,7 +812,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" visible="true" weight="0.30141288" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3018868" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.3288854" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39952904" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -717,255 +840,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/cache/PiqnicCachedIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIterBlockTriples.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="35" column="81" lean-forward="true" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
-          <folding>
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#1632#1633#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/3.7.0/jena-core-3.7.0.jar!/org/apache/jena/graph/Triple.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#1643#1644#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1715#1716#0" expanded="true" />
-            <element signature="e#1747#1748#0" expanded="true" />
-            <element signature="e#1815#1816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/main/OpExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-tdb2/3.7.0/jena-tdb2-3.7.0.jar!/org/apache/jena/tdb2/solver/StageGeneratorDirectTDB.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-tdb/3.7.0/jena-tdb-3.7.0.jar!/org/apache/jena/tdb/solver/StageGeneratorDirectTDB.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/3.7.0/jena-core-3.7.0.jar!/org/apache/jena/graph/impl/GraphBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/main/StageGeneratorGeneric.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/ResultSetCheckCondition.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/ResultSetStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIteratorWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#690#691#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIterConvert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#909#910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIter1.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#701#702#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIterPeek.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIterTriplePattern.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/binding/Binding.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/binding/BindingBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/algebra/op/OpBGP.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/main/ExecutionDispatch.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIteratorBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/IPeerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/QueryIterPiqnicBindBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIterRepeatApply.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="59" column="4" lean-forward="true" selection-start-line="59" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/engine/iterator/QueryIterDistinct.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.7.0/jena-arq-3.7.0.jar!/org/apache/jena/sparql/core/Var.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
-          <folding>
-            <element signature="e#1897#1898#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/OpExecutorPiqnic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="148" column="53" selection-start-line="148" selection-start-column="53" selection-end-line="148" selection-end-column="53" />
-          <folding>
-            <element signature="e#7540#7541#0" expanded="true" />
-            <element signature="e#7599#7600#0" expanded="true" />
-            <element signature="e#8075#8105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicBindings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -973,16 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="147" column="30" lean-forward="true" selection-start-line="147" selection-start-column="30" selection-end-line="147" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1009,46 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="52" column="12" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/exceptions/QueryInterruptedException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1066,9 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="655">
           <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,21 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/QueryIterPiqnicDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="96" column="12" lean-forward="true" selection-start-line="96" selection-start-column="12" selection-end-line="97" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,6 +914,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/config/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+          <folding>
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/HDTCloser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tt" />
+    <entry file="file://$PROJECT_DIR$/TESTT" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/QueryIterPiqnicBind.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
@@ -1114,45 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/QueryIterPiqnicDown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="57" column="99" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="57" selection-end-column="99" />
-          <folding>
-            <element signature="e#7613#7614#0" expanded="true" />
-            <element signature="e#7667#7668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2774">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="76" selection-end-column="9" />
+        <state relative-caret-position="1230">
+          <caret line="96" column="12" selection-start-line="96" selection-start-column="12" selection-end-line="97" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1161,32 +964,328 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/PiqnicJenaDownIterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        <state relative-caret-position="1035">
+          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/util/QueryResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/util/Constituents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1619#1620#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="82" selection-end-column="9" />
+        <state relative-caret-position="-43">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/QueryIterPiqnicBindBlock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="150" column="27" lean-forward="true" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
+        <state relative-caret-position="732">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7779#7780#0" expanded="true" />
-            <element signature="e#7830#7831#0" expanded="true" />
+            <element signature="e#2395#2396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/IClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/IPeerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/IFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificMetaFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5047">
+          <caret line="401" column="44" selection-start-line="401" selection-start-column="44" selection-end-line="401" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3392#3393#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="141" column="64" selection-start-line="141" selection-start-column="64" selection-end-line="141" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/Dataset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+          <folding>
+            <element signature="e#566#572#0" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="8" column="57" lean-forward="true" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="410" column="9" selection-start-line="410" selection-start-column="9" selection-end-line="410" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#13532#13533#0" expanded="true" />
+            <element signature="e#13586#13587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="262" column="4" selection-start-line="262" selection-start-column="4" selection-end-line="266" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/rdfhdt/hdt-java-core/1.1/hdt-java-core-1.1.jar!/org/rdfhdt/hdt/header/PlainHeaderIterator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/rdfhdt/hdt-java-core/1.1/hdt-java-core-1.1.jar!/org/rdfhdt/hdt/rdf/parsers/JenaModelIterator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/rdfhdt/hdt-java-core/1.1/hdt-java-core-1.1.jar!/org/rdfhdt/hdt/iterator/DictionaryTranslateIterator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/rdfhdt/hdt-api/1.1/hdt-api-1.1.jar!/org/rdfhdt/hdt/triples/IteratorTripleString.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1082">
+          <caret line="432" column="79" selection-start-line="432" selection-start-column="79" selection-end-line="432" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

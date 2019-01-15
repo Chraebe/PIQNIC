@@ -1,21 +1,26 @@
 package dk.aau.cs.qweb.piqnic.connection;
 
 import dk.aau.cs.qweb.piqnic.PiqnicClient;
+import dk.aau.cs.qweb.piqnic.data.Dataset;
 import dk.aau.cs.qweb.piqnic.data.FragmentBase;
 import dk.aau.cs.qweb.piqnic.data.FragmentFactory;
+import dk.aau.cs.qweb.piqnic.data.MetaFragmentBase;
 import dk.aau.cs.qweb.piqnic.peer.IPeer;
 import dk.aau.cs.qweb.piqnic.peer.Peer;
 import dk.aau.cs.qweb.piqnic.util.Triple;
 import org.rdfhdt.hdt.exceptions.NotImplementedException;
+import org.rdfhdt.hdt.triples.TripleString;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.charset.Charset;
 import java.util.*;
 
 public class PeerListener implements IPeerListener {
     private final int port;
     private Set<UUID> processed = new HashSet<>();
+    public static int NUM_MSG = 0;
 
     public PeerListener(int port) {
         this.port = port;
@@ -71,18 +76,6 @@ public class PeerListener implements IPeerListener {
     }
 
     private void processConnection(Scanner scanner, PrintWriter writer) {
-
-        /*
-         * 0 Join (IP, Port, Id) -> Neighbours
-         * 1 Shuffle (Peers) -> Peers
-         * 2 AddFragment (Replicas, Nodes, FragmentBase, Stream(Triples)) -> Nodes
-         * 3 UpdateFragment (FragmentBase, Stream(Triples))
-         * 4 ProcessTriplePattern (TriplePattern, TTL, IDs) -> Stream(Triples)
-         * 5 FragmentDependence (Stream(URI, FragmentID)) -> Boolean
-         * 6 EstimateCardinality (TriplePattern, TTL, IDs) -> Estimation
-         * 8 ProcessTriplePatternBound (TriplePattern,TTL,Bindings)
-         */
-
         String line = scanner.nextLine();
 
         switch (line) {
@@ -102,7 +95,7 @@ public class PeerListener implements IPeerListener {
                 processTriplePattern(scanner, writer);
                 break;
             case "5":
-                fragmentDependence(scanner, writer);
+                passJoin(scanner, writer);
                 break;
             case "6":
                 estimateCardinality(scanner, writer);
@@ -113,13 +106,71 @@ public class PeerListener implements IPeerListener {
             case "8":
                 processTriplePatternBound(scanner, writer);
                 break;
+            case "9":
+                getConstituents(writer);
+                break;
         }
+    }
+
+    public void getConstituents(PrintWriter writer) {
+        PiqnicClient.nodeInstance.getConstituents(writer);
     }
 
     @Override
     public void join(Scanner scanner, PrintWriter writer) {
-        //Todo
-        throw new NotImplementedException();
+        String line = scanner.nextLine();
+        String[] words = line.split(";");
+        Peer p = new Peer(words[0], Integer.parseInt(words[1]), UUID.fromString(words[2]));
+
+        List<Peer> peers = PiqnicClient.nodeInstance.getNeighbours();
+        for(Peer peer : peers) {
+            writer.println(peer.getAddress() + ";" + peer.getPort() + ";" + peer.getId());
+        }
+
+        if(PiqnicClient.nodeInstance.getDatasets().size() == 0) {
+            Peer peer = PiqnicClient.nodeInstance.getRandomPeers(1).get(0);
+            try {
+                peer.passJoin(p);
+            } catch(IOException e) {}
+        } else {
+            int num = 0;
+            for(Dataset d : PiqnicClient.nodeInstance.getDatasets()) {
+                for(MetaFragmentBase f : d.getFragments()) {
+                    if(num >= 5) return;
+                    num++;
+                    try {
+                        p.addFragmentInit(f, PiqnicClient.nodeInstance.getTriples(f), 1);
+                        f.addPeer(p);
+                    } catch (IOException e) {}
+                }
+            }
+        }
+    }
+
+    @Override
+    public void passJoin(Scanner scanner, PrintWriter writer) {
+        String line = scanner.nextLine();
+        String[] words = line.split(";");
+        Peer p = new Peer(words[0], Integer.parseInt(words[1]), UUID.fromString(words[2]));
+
+        if(PiqnicClient.nodeInstance.getDatasets().size() == 0) {
+            Peer peer = PiqnicClient.nodeInstance.getRandomPeers(1).get(0);
+            try {
+                peer.passJoin(p);
+            } catch(IOException e) {}
+        } else {
+            int num = 0;
+            for(Dataset d : PiqnicClient.nodeInstance.getDatasets()) {
+                for(MetaFragmentBase f : d.getFragments()) {
+                    if(num >= 5) return;
+                    num++;
+                    try {
+                        p.addFragmentInit(f, PiqnicClient.nodeInstance.getTriples(f), 1);
+                        f.addPeer(p);
+                    } catch (IOException e) {}
+                }
+            }
+        }
     }
 
     @Override
@@ -131,29 +182,81 @@ public class PeerListener implements IPeerListener {
             peers.add(new Peer(words[1], Integer.parseInt(words[2]), UUID.fromString(words[0])));
         }
 
-        //FIXME NOT random nodes, the num least related nodes
-        List<IPeer> retPeers = PiqnicClient.nodeInstance.getRandomPeers(peers.size());
+        List<Peer> retPeers = PiqnicClient.nodeInstance.getLeastRelated(peers.size());
         PiqnicClient.nodeInstance.getNeighbours().removeAll(retPeers);
 
-        for (IPeer peer : peers) {
+        for (Peer peer : peers) {
             PiqnicClient.nodeInstance.addNeighbour(peer);
         }
 
-        for (IPeer p : retPeers) {
+        for (Peer p : retPeers) {
             writer.println(p.getId().toString() + ";" + p.getAddress() + ";" + p.getPort());
         }
     }
 
     @Override
     public void addFragment(Scanner scanner, PrintWriter writer) {
-        //Todo
-        throw new NotImplementedException();
+        String line = scanner.nextLine();
+        String[] words = line.split(";");
+        Peer o = new Peer(words[0], Integer.parseInt(words[1]), UUID.fromString(words[2]));
+
+        line = scanner.nextLine();
+        words = line.split(";;");
+
+        FragmentBase fragment = FragmentFactory.createFragment(words[0], words[1], new File(getRandomFilename()), o);
+        int ttl = Integer.parseInt(words[2]);
+
+        List<TripleString> triples = new ArrayList<>();
+        while ((line = scanner.nextLine()) != null) {
+            String[] t = line.split(";;");
+            triples.add(new TripleString(t[0], t[1], t[2]));
+        }
+
+        if (!PiqnicClient.nodeInstance.hasFragment(fragment)) {
+            PiqnicClient.nodeInstance.addFragment(fragment, triples);
+            writer.println(PiqnicClient.nodeInstance.getIp() + ";" + PiqnicClient.nodeInstance.getPort() + ";" + PiqnicClient.nodeInstance.getId());
+            if (ttl > 1) {
+                Peer p = PiqnicClient.nodeInstance.getRandomPeers(1).get(0);
+                try {
+                    p.addFragment(fragment, triples, (ttl - 1), writer);
+                } catch (IOException e) {
+                }
+            }
+        } else {
+            Peer p = PiqnicClient.nodeInstance.getRandomPeers(1).get(0);
+            try {
+                p.addFragment(fragment, triples, (ttl), writer);
+            } catch (IOException e) {
+            }
+        }
+    }
+
+    private String getRandomFilename() {
+        byte[] array = new byte[7];
+        new Random().nextBytes(array);
+
+        return new String(array, Charset.forName("UTF-8")) + ".hdt";
     }
 
     @Override
     public void updateFragment(Scanner scanner, PrintWriter writer) {
-        //Todo
-        throw new NotImplementedException();
+        String line = scanner.nextLine();
+        String[] words = line.split(";");
+        FragmentBase fragment = PiqnicClient.nodeInstance.getFragment(words[0], words[1]);
+        if(fragment == null) return;
+
+        List<TripleString> triples = new ArrayList<>();
+        String cmd = scanner.nextLine();
+        while ((line = scanner.nextLine()) != null) {
+            words = line.split(";;");
+            triples.add(new TripleString(words[0], words[1], words[2]));
+        }
+
+        if(cmd.equals("0")) {
+            PiqnicClient.nodeInstance.addTriplesToFragment(fragment, triples);
+        } else if(cmd.equals("1")) {
+            PiqnicClient.nodeInstance.removeTriplesFromFragments(fragment, triples);
+        }
     }
 
     @Override
@@ -163,6 +266,8 @@ public class PeerListener implements IPeerListener {
             writer.close();
             return;
         }
+
+        NUM_MSG = 0;
 
         String[] words = line.split(";");
         UUID reqId = UUID.fromString(words[0]);
@@ -180,14 +285,16 @@ public class PeerListener implements IPeerListener {
 
         if (ttl > 1) {
             for (IPeer peer : PiqnicClient.nodeInstance.getNeighbours()) {
+                NUM_MSG++;
                 QueryProcessorThread t = new QueryProcessorThread(triple, peer, ttl - 1, reqId, writer);
                 t.start();
                 threads.add(t);
             }
         }
 
-
         while (isRunning(threads)) ;
+        System.out.println("NUM_MSG=" + NUM_MSG);
+        writer.println(":" + NUM_MSG);
         writer.close();
     }
 
@@ -199,17 +306,21 @@ public class PeerListener implements IPeerListener {
             return;
         }
 
+        NUM_MSG = 0;
+
+        long start = System.currentTimeMillis();
+
         List<Map<String, String>> bindings = new ArrayList<>();
         List<String> bLines = new ArrayList<>();
         String bind;
-        while((bind = scanner.nextLine()) != null) {
-            if(bind.equals("EOF")) break;
+        while ((bind = scanner.nextLine()) != null) {
+            if (bind.equals("EOF")) break;
 
             Map<String, String> bs = new HashMap<>();
             String[] binds = bind.split(";;");
-            for(int i = 0; i < binds.length; i++) {
+            for (int i = 0; i < binds.length; i++) {
                 String b = binds[i];
-                bs.put(b.substring(0, b.indexOf("=")), b.substring(b.indexOf("=")+1));
+                bs.put(b.substring(0, b.indexOf("=")), b.substring(b.indexOf("=") + 1));
             }
             bLines.add(bind);
             bindings.add(bs);
@@ -230,6 +341,7 @@ public class PeerListener implements IPeerListener {
 
         if (ttl > 1) {
             for (IPeer peer : PiqnicClient.nodeInstance.getNeighbours()) {
+                NUM_MSG++;
                 QueryProcessorBoundThread t = new QueryProcessorBoundThread(triple, peer, ttl - 1, bLines, reqId, writer);
                 t.start();
                 threads.add(t);
@@ -238,14 +350,10 @@ public class PeerListener implements IPeerListener {
         }
 
         PiqnicClient.nodeInstance.processTriplePatternBound(triple, bindings, writer);
-        while (isRunningBound(threads)) ;
-        System.out.println("Done");
+        while (isRunningBound(threads) && ((System.currentTimeMillis() - start) < (500 * ttl))) ;
+        System.out.println("NUM_MSG: " + NUM_MSG);
+        writer.println(":" + NUM_MSG);
         writer.close();
-    }
-
-    @Override
-    public void fragmentDependence(Scanner scanner, PrintWriter writer) {
-        // Todo
     }
 
     @Override
@@ -273,22 +381,27 @@ public class PeerListener implements IPeerListener {
 
     private void addFragmentForTests(Scanner scanner, PrintWriter writer) {
         String line = scanner.nextLine();
+        String[] words = line.split(";");
+        Peer o = new Peer(words[0], Integer.parseInt(words[1]), UUID.fromString(words[2]));
+
+        line = scanner.nextLine();
         if (line == null) return;
 
-        String[] words = line.split(";");
+        words = line.split(";");
         int ttl = Integer.parseInt(words[0]);
-        FragmentBase fragment = FragmentFactory.createFragment(words[1], words[2], new File(words[3]));
+        FragmentBase fragment = FragmentFactory.createFragment(words[1], words[2], new File(words[3]), o);
         System.out.println("Adding fragment " + fragment.getBaseUri() + "/" + fragment.getId());
-        if(PiqnicClient.nodeInstance.insertFragment(fragment)) {
-            ttl = ttl-1;
+        if (PiqnicClient.nodeInstance.insertFragment(fragment)) {
+            ttl = ttl - 1;
             writer.println(PiqnicClient.nodeInstance.getId() + ";" + PiqnicClient.nodeInstance.getIp() + ";" + PiqnicClient.nodeInstance.getPort());
         }
 
-        if(ttl > 1) {
+        if (ttl > 1) {
             IPeer peer = PiqnicClient.nodeInstance.getRandomPeers(1).get(0);
             try {
                 peer.addFragmentForTest(fragment, ttl, writer);
-            } catch (IOException e) {}
+            } catch (IOException e) {
+            }
         }
     }
 

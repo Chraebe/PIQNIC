@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
 public class PiqnicJenaConstants {
     private static final String BASE_URI = "http://qweb.cs.aau.dk/piqnic/";
     public static final Resource PIQNIC_GRAPH = ResourceFactory.createResource(BASE_URI+"fuseki#PIQNICGraph") ;
-    public static int NTB = 0;
+    public static long NTB = 0;
     public static int NM = 0;
 
     public final static int BIND_NUM = 1000;

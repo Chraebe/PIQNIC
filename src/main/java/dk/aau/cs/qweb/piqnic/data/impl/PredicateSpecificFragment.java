@@ -2,13 +2,14 @@ package dk.aau.cs.qweb.piqnic.data.impl;
 
 import com.google.gson.Gson;
 import dk.aau.cs.qweb.piqnic.data.FragmentBase;
+import dk.aau.cs.qweb.piqnic.peer.Peer;
 import dk.aau.cs.qweb.piqnic.util.Triple;
 
 import java.io.File;
 
 public class PredicateSpecificFragment extends FragmentBase {
-    public PredicateSpecificFragment(String baseUri, String id, File file) {
-        super(baseUri, id, file);
+    public PredicateSpecificFragment(String baseUri, String id, File file, Peer owner) {
+        super(baseUri, id, file, owner);
     }
 
     @Override

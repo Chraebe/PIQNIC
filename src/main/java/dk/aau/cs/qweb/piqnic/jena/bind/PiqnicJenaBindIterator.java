@@ -25,7 +25,6 @@ public class PiqnicJenaBindIterator extends NiceIterator<Pair<Triple, Binding>> 
     private BufferedReader reader;
     private String nextLine;
     private boolean empty = false;
-    public static int NTB = 0;
     private Set<String> seen = new HashSet<>();
 
     public PiqnicJenaBindIterator(BufferedReader reader) {
@@ -44,6 +43,10 @@ public class PiqnicJenaBindIterator extends NiceIterator<Pair<Triple, Binding>> 
             nextLine = reader.readLine();
             while(nextLine != null && seen.contains(nextLine)) {
                 nextLine = reader.readLine();
+            }
+            if(nextLine != null && nextLine.startsWith(":")) {
+                PiqnicJenaConstants.NM+=Integer.parseInt(nextLine.substring(1));
+                return bufferNext();
             }
             seen.add(nextLine);
             return nextLine;
@@ -78,7 +81,6 @@ public class PiqnicJenaBindIterator extends NiceIterator<Pair<Triple, Binding>> 
             throw new NoSuchElementException();
 
         if(PiqnicClient.test) {
-            PiqnicJenaConstants.NM++;
             PiqnicJenaConstants.NTB += nextLine.getBytes().length;
         }
         String[] str = nextLine.split(";;");

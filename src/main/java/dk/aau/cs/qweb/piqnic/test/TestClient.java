@@ -1,10 +1,14 @@
 package dk.aau.cs.qweb.piqnic.test;
 
+import dk.aau.cs.qweb.piqnic.PiqnicClient;
 import dk.aau.cs.qweb.piqnic.client.IClient;
 import dk.aau.cs.qweb.piqnic.config.Configuration;
+import dk.aau.cs.qweb.piqnic.data.FragmentBase;
 import dk.aau.cs.qweb.piqnic.jena.PiqnicJenaConstants;
 import dk.aau.cs.qweb.piqnic.jena.graph.PiqnicGraph;
 import dk.aau.cs.qweb.piqnic.jena.solver.PiqnicJenaFloodIterator;
+import dk.aau.cs.qweb.piqnic.peer.IPeer;
+import dk.aau.cs.qweb.piqnic.peer.Peer;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -88,18 +92,29 @@ public class TestClient implements IClient {
 
         String[] words = line.split(" ");
         File queryFile = new File(words[0]);
-        String approach = words[1];
+        int ttl = Integer.parseInt(words[1]);
 
-        PiqnicJenaConstants.PROCESSOR = PiqnicJenaConstants.ProcessingType.fromString(approach);
-        writer.println(PiqnicJenaConstants.PROCESSOR);
+        if(ttl == -1) {
+            IPeer p = PiqnicClient.nodeInstance.getRandomPeers(0).get(0);
+            for(FragmentBase f : PiqnicClient.nodeInstance.getAllFragments()) {
+                p.addFragmentForTest(f, 1, new PrintWriter(System.out));
+            }
+            writer.println("Done");
+            writer.close();
+            System.exit(0);
+        }
 
-        performTests(writer, queryFile, approach);
+        Configuration.instance.setTTL(5);
+        PiqnicJenaConstants.PROCESSOR = PiqnicJenaConstants.ProcessingType.BIND;
+        writer.println("No. of nodes="+ttl);
+
+        performTests(writer, queryFile, ttl);
     }
 
-    private void performTests(PrintWriter writer, File queryFile, String approach) throws Exception {
-        File outDir = new File("experiments/approach/run1/"+queryFile.getName());
+    private void performTests(PrintWriter writer, File queryFile, int ttl) throws Exception {
+        File outDir = new File("experiments/nn/run1/"+queryFile.getName());
         outDir.mkdirs();
-        File output = new File("experiments/approach/run1/"+queryFile.getName()+"/"+approach+".txt");
+        File output = new File("experiments/nn/run1/"+queryFile.getName()+"/"+ttl+".txt");
         String sparql = new String(Files.readAllBytes(Paths.get(queryFile.getAbsolutePath())), StandardCharsets.UTF_8);
         String warmup = new String(Files.readAllBytes(Paths.get("queries/S2")), StandardCharsets.UTF_8);
 
@@ -126,6 +141,7 @@ public class TestClient implements IClient {
         ExecutorService ex = Executors.newSingleThreadExecutor();
         Future<String> future = ex.submit(new QueryTask(executor, writer, log));
         PiqnicJenaConstants.NTB = 0;
+        PiqnicJenaConstants.NM = 0;
 
         try {
             future.get(delay, TimeUnit.MINUTES);
