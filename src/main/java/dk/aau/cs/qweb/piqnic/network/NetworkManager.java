@@ -36,6 +36,6 @@ public class NetworkManager extends Thread {
         } catch (IOException e) {
             System.err.println("Failed to perform shuffle: " + e.getMessage());
         }
-        scheduler.scheduleAtFixedRate(runnable, l, Configuration.instance.getMinutesTilShuffle(), TimeUnit.HOURS);
+        scheduler.scheduleAtFixedRate(runnable, l, Configuration.instance.getMinutesTilShuffle(), TimeUnit.MINUTES);
     }
 }

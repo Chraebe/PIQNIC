@@ -85,16 +85,29 @@ public class TestClient implements IClient {
     }
 
     private void processConnection(PrintWriter writer, Scanner scanner) throws Exception {
+
         /*queries/S1 [flood|bind|down]*/
 
         String line = scanner.nextLine();
         if (line == null) return;
 
-        String[] words = line.split(" ");
-        File queryFile = new File(words[0]);
-        int ttl = Integer.parseInt(words[1]);
+        //String[] words = line.split(" ");
+        File outDir = new File("experiments/load/" + PiqnicClient.nodeInstance.getPort());
+        outDir.mkdirs();
+        File output = new File("experiments/load/" + PiqnicClient.nodeInstance.getPort() + "/" + line + ".csv");
+        PrintWriter w = new PrintWriter(new FileOutputStream(output), true);
+        if (!TestConstants.QEXEC_DONE)
+            w.println(TestConstants.NUM_QUERIES + ";" + TestConstants.NUM_TRIPLEPATTERNS + ";" + (TestConstants.TIME_QUERIES+(System.currentTimeMillis()-TestConstants.QEXEC_START)) + ";" + TestConstants.TIME_TRIPLEPATTERNS);
+        else
+            w.println(TestConstants.NUM_QUERIES + ";" + TestConstants.NUM_TRIPLEPATTERNS + ";" + TestConstants.TIME_QUERIES + ";" + TestConstants.TIME_TRIPLEPATTERNS);
 
-        if(ttl == -1) {
+        TestConstants.NUM_TRIPLEPATTERNS = 0;
+        TestConstants.NUM_QUERIES = 0;
+        TestConstants.TIME_TRIPLEPATTERNS = 0;
+        TestConstants.TIME_QUERIES = 0;
+        w.close();
+
+        /*if(ttl == -1) {
             IPeer p = PiqnicClient.nodeInstance.getRandomPeers(0).get(0);
             for(FragmentBase f : PiqnicClient.nodeInstance.getAllFragments()) {
                 p.addFragmentForTest(f, 1, new PrintWriter(System.out));
@@ -108,13 +121,13 @@ public class TestClient implements IClient {
         PiqnicJenaConstants.PROCESSOR = PiqnicJenaConstants.ProcessingType.BIND;
         writer.println("No. of nodes="+ttl);
 
-        performTests(writer, queryFile, ttl);
+        performTests(writer, queryFile, ttl);*/
     }
 
     private void performTests(PrintWriter writer, File queryFile, int ttl) throws Exception {
-        File outDir = new File("experiments/nn/run1/"+queryFile.getName());
+        File outDir = new File("experiments/nn/run1/" + queryFile.getName());
         outDir.mkdirs();
-        File output = new File("experiments/nn/run1/"+queryFile.getName()+"/"+ttl+".txt");
+        File output = new File("experiments/nn/run1/" + queryFile.getName() + "/" + ttl + ".txt");
         String sparql = new String(Files.readAllBytes(Paths.get(queryFile.getAbsolutePath())), StandardCharsets.UTF_8);
         String warmup = new String(Files.readAllBytes(Paths.get("queries/S2")), StandardCharsets.UTF_8);
 
@@ -147,7 +160,8 @@ public class TestClient implements IClient {
             future.get(delay, TimeUnit.MINUTES);
         } catch (Exception e) {
             future.cancel(true);
-            if(log) writer.println(numResults + ";" + 0 + ";" + PiqnicJenaConstants.NTB + ";" + PiqnicJenaConstants.NM);
+            if (log)
+                writer.println(numResults + ";" + 0 + ";" + PiqnicJenaConstants.NTB + ";" + PiqnicJenaConstants.NM);
         }
     }
 
@@ -169,11 +183,12 @@ public class TestClient implements IClient {
             final ResultSet rs = executor.execSelect();
             while (rs.hasNext()) {
                 QuerySolution sol = rs.next();
-                if(log) writer.println(sol);
+                if (log) writer.println(sol);
                 numResults++;
             }
             long end = System.currentTimeMillis();
-            if(log) writer.println(numResults + ";" + (end-start) + ";" + PiqnicJenaConstants.NTB + ";" + PiqnicJenaConstants.NM);
+            if (log)
+                writer.println(numResults + ";" + (end - start) + ";" + PiqnicJenaConstants.NTB + ";" + PiqnicJenaConstants.NM);
             return "";
         }
     }

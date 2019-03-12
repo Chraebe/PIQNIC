@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" line="251" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" line="21" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" line="212" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" line="23" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d166cde4-cd73-4da8-be6d-771b34ce66c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/software.iml" beforeDir="false" afterPath="$PROJECT_DIR$/software.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,52 +128,55 @@
     <session id="-1540751322">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="2" />
           <entry key="dummy" value="18" />
-          <entry key="java" value="37994" />
+          <entry key="java" value="39281" />
           <entry key="md" value="446" />
           <entry key="txt" value="24" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="37994" />
+          <entry key="JAVA" value="39281" />
           <entry key="Markdown" value="446" />
           <entry key="PLAIN_TEXT" value="42" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="TESTT" value="1" />
-          <entry key="class" value="120" />
+          <entry key="class" value="122" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="310" />
+          <entry key="java" value="332" />
           <entry key="md" value="2" />
           <entry key="tt" value="1" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="120" />
-          <entry key="JAVA" value="310" />
+          <entry key="CLASS" value="122" />
+          <entry key="JAVA" value="332" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -170,8 +186,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="141" column="64" selection-start-line="141" selection-start-column="64" selection-end-line="141" selection-end-column="64" />
+            <state relative-caret-position="707">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,86 +196,110 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5047">
-              <caret line="401" column="44" selection-start-line="401" selection-start-column="44" selection-end-line="401" selection-end-column="44" />
+            <state relative-caret-position="1500">
+              <caret line="100" column="21" lean-forward="true" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/config/Configuration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3392#3393#0" expanded="true" />
-                <element signature="e#3457#3458#0" expanded="true" />
+                <element signature="e#1803#1804#0" expanded="true" />
+                <element signature="e#1847#1848#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="34" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="34" />
+            <state relative-caret-position="465">
+              <caret line="38" column="114" selection-start-line="38" selection-start-column="114" selection-end-line="38" selection-end-column="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1724#1725#0" expanded="true" />
+                <element signature="e#1772#1773#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="410" column="9" selection-start-line="410" selection-start-column="9" selection-end-line="410" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#13532#13533#0" expanded="true" />
-                <element signature="e#13586#13587#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="842">
-              <caret line="416" column="46" lean-forward="true" selection-start-line="416" selection-start-column="46" selection-end-line="417" selection-end-column="45" />
+            <state relative-caret-position="480">
+              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+            <state relative-caret-position="540">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#856#857#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="262" column="4" selection-start-line="262" selection-start-column="4" selection-end-line="266" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -277,11 +317,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>size</find>
-      <find>LDF</find>
-      <find>HDT</find>
-      <find>Found HT</find>
-      <find>contains</find>
       <find>addFragmentBa</find>
       <find>addFragmentBas</find>
       <find>Hii</find>
@@ -307,6 +342,11 @@
       <find>sort</find>
       <find>Todo</find>
       <find>socket</find>
+      <find>commons</find>
+      <find>hdt</find>
+      <find>estimate</find>
+      <find>processed</find>
+      <find>rdfhdt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -315,8 +355,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/cache/PiqnicCache.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/visitor/PiqnicPredicateVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/IFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PrdicateSpecificMetaFragment.java" />
@@ -324,7 +362,6 @@
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraphAssembler.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/config/Configuration.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicStatistics.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/QueryIterPiqnicDownBlock.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/PiqnicDownTripleBindings.java" />
@@ -338,34 +375,37 @@
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/PiqnicBoundIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/QueryIterPiqnicBind.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/PiqnicJenaDownIterator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/HDTCloser.java" />
         <option value="$PROJECT_DIR$/tt" />
         <option value="$PROJECT_DIR$/TESTT" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/PiqnicJenaFloodIterator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/util/Constituents.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/Dataset.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/IPeerListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificMetaFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/NodeBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriples.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/ControlInformation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" />
       </list>
     </option>
   </component>
@@ -399,9 +439,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="x" value="1845" />
+    <option name="width" value="1669" />
+    <option name="height" value="976" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -409,9 +449,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -452,6 +489,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="piqnic" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
               <item name="connection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -461,7 +516,75 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="piqnic" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
               <item name="jena" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
+              <item name="jena" type="462c0819:PsiDirectoryNode" />
+              <item name="bind" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
+              <item name="jena" type="462c0819:PsiDirectoryNode" />
+              <item name="down" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
+              <item name="jena" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
+              <item name="jena" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PIQNIC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="piqnic" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PIQNIC" type="b2602c69:ProjectViewProjectNode" />
@@ -507,34 +630,37 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547573885068" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552398185567" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="dk.aau.cs.qweb.cli" />
-      <recent name="dk.aau.cs.qweb.connection" />
-      <recent name="dk.aau.cs.qweb.peer" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/org/linkeddatafragments" />
       <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/java/org/linkeddatafragments" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dk.aau.cs.qweb.pweb.visitor" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dk.aau.cs.qweb.cli" />
+      <recent name="dk.aau.cs.qweb.connection" />
+      <recent name="dk.aau.cs.qweb.peer" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -583,12 +709,17 @@
       <workItem from="1543674968922" duration="191638000" />
       <workItem from="1544373365162" duration="11787000" />
       <workItem from="1545051912843" duration="3392000" />
-      <workItem from="1546421038541" duration="49023000" />
+      <workItem from="1546421038541" duration="49910000" />
+      <workItem from="1548318565045" duration="25000" />
+      <workItem from="1548358751772" duration="16529000" />
+      <workItem from="1548426687490" duration="8660000" />
+      <workItem from="1550828582830" duration="4479000" />
+      <workItem from="1552393304395" duration="3679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="620704000" />
+    <option name="totallyTimeSpent" value="654963000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -603,7 +734,7 @@
     <frame x="1973" y="32" width="2507" height="1408" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12230801" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12596506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -640,56 +771,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicBindings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicStatistics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="19" lean-forward="true" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/QueryIterPiqnicDownBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="830">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/solver/ReorderTransformationPiqnic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/exceptions/QueryInterruptedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/down/PiqnicBoundIterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="655">
@@ -708,47 +789,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/config/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
-          <folding>
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/HDTCloser.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tt" />
     <entry file="file://$PROJECT_DIR$/TESTT" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/QueryIterPiqnicBind.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="88" column="64" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -756,9 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="96" column="12" selection-start-line="96" selection-start-column="12" selection-end-line="97" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,9 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,9 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,21 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1619#1620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,27 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="732">
           <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
@@ -867,93 +872,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificMetaFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5047">
-          <caret line="401" column="44" selection-start-line="401" selection-start-column="44" selection-end-line="401" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3392#3393#0" expanded="true" />
-            <element signature="e#3457#3458#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="141" column="64" selection-start-line="141" selection-start-column="64" selection-end-line="141" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/Dataset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="51" />
-          <folding>
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
-            <element signature="e#1772#1773#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -971,16 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -994,32 +906,10 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="410" column="9" selection-start-line="410" selection-start-column="9" selection-end-line="410" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#13532#13533#0" expanded="true" />
-            <element signature="e#13586#13587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="262" column="4" selection-start-line="262" selection-start-column="4" selection-end-line="266" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,32 +941,171 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/IPeer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="495">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/INode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/rdfhdt/hdt-api/1.1/hdt-api-1.1.jar!/org/rdfhdt/hdt/exceptions/ParserException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/impl/BitmapTriples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/triples/IteratorTripleString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="38" column="68" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.jar!/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/rdfhdt/hdt/options/ControlInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="188" column="23" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="416" column="46" lean-forward="true" selection-start-line="416" selection-start-column="46" selection-end-line="417" selection-end-column="45" />
+        <state relative-caret-position="1560">
+          <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/bind/PiqnicJenaBindIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificMetaFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3015">
+          <caret line="224" column="17" selection-start-line="224" selection-start-column="17" selection-end-line="224" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/FragmentBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+            <element signature="e#1772#1773#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/impl/PredicateSpecificFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="235" column="25" selection-start-line="235" selection-start-column="25" selection-end-line="235" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/graph/PiqnicGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="38" column="114" selection-start-line="38" selection-start-column="114" selection-end-line="38" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/config/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#1803#1804#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1085,8 +1114,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+        <state relative-caret-position="1500">
+          <caret line="100" column="21" lean-forward="true" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="233" column="49" lean-forward="true" selection-start-line="233" selection-start-column="49" selection-end-line="233" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/data/MetaFragmentBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1155,7 +1227,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <last-edited>Maven: org.rdfhdt:hdt-api:1.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

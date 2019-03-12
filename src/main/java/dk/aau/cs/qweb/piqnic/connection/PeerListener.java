@@ -7,6 +7,8 @@ import dk.aau.cs.qweb.piqnic.data.FragmentFactory;
 import dk.aau.cs.qweb.piqnic.data.MetaFragmentBase;
 import dk.aau.cs.qweb.piqnic.peer.IPeer;
 import dk.aau.cs.qweb.piqnic.peer.Peer;
+import dk.aau.cs.qweb.piqnic.test.TestClient;
+import dk.aau.cs.qweb.piqnic.test.TestConstants;
 import dk.aau.cs.qweb.piqnic.util.Triple;
 import org.rdfhdt.hdt.exceptions.NotImplementedException;
 import org.rdfhdt.hdt.triples.TripleString;
@@ -276,6 +278,7 @@ public class PeerListener implements IPeerListener {
             return;
         }
 
+        TestConstants.NUM_TRIPLEPATTERNS++;
         processed.add(reqId);
         Triple triple = new Triple(words[2], words[3], words[4]);
         int ttl = Integer.parseInt(words[1]);
@@ -333,6 +336,8 @@ public class PeerListener implements IPeerListener {
             return;
         }
 
+        TestConstants.NUM_TRIPLEPATTERNS++;
+
         processed.add(reqId);
         Triple triple = new Triple(words[2], words[3], words[4]);
 
@@ -381,27 +386,22 @@ public class PeerListener implements IPeerListener {
 
     private void addFragmentForTests(Scanner scanner, PrintWriter writer) {
         String line = scanner.nextLine();
-        String[] words = line.split(";");
-        Peer o = new Peer(words[0], Integer.parseInt(words[1]), UUID.fromString(words[2]));
-
-        line = scanner.nextLine();
         if (line == null) return;
 
-        words = line.split(";");
+        String[] words = line.split(";");
         int ttl = Integer.parseInt(words[0]);
-        FragmentBase fragment = FragmentFactory.createFragment(words[1], words[2], new File(words[3]), o);
+        FragmentBase fragment = FragmentFactory.createFragment(words[1], words[2], new File(words[3]), null);
         System.out.println("Adding fragment " + fragment.getBaseUri() + "/" + fragment.getId());
-        if (PiqnicClient.nodeInstance.insertFragment(fragment)) {
-            ttl = ttl - 1;
+        if(PiqnicClient.nodeInstance.insertFragment(fragment)) {
+            ttl = ttl-1;
             writer.println(PiqnicClient.nodeInstance.getId() + ";" + PiqnicClient.nodeInstance.getIp() + ";" + PiqnicClient.nodeInstance.getPort());
         }
 
-        if (ttl > 1) {
+        if(ttl > 1) {
             IPeer peer = PiqnicClient.nodeInstance.getRandomPeers(1).get(0);
             try {
                 peer.addFragmentForTest(fragment, ttl, writer);
-            } catch (IOException e) {
-            }
+            } catch (IOException e) {}
         }
     }
 

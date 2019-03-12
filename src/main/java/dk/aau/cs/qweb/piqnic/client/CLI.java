@@ -13,6 +13,7 @@ import dk.aau.cs.qweb.piqnic.jena.graph.PiqnicGraph;
 import dk.aau.cs.qweb.piqnic.node.PiqnicNode;
 import dk.aau.cs.qweb.piqnic.peer.IPeer;
 import dk.aau.cs.qweb.piqnic.peer.Peer;
+import dk.aau.cs.qweb.piqnic.test.TestConstants;
 import dk.aau.cs.qweb.piqnic.util.*;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
@@ -216,6 +217,7 @@ public class CLI implements IClient {
     }
 
     private void processQuery(String line, Scanner scanner) throws IOException {
+        TestConstants.NUM_QUERIES++;
         String query = line;
         while (!query.endsWith(";")) {
             query = query + " " + scanner.nextLine();
@@ -296,6 +298,10 @@ public class CLI implements IClient {
 
     private void writeResults(final PrintWriter outputStream, Query query, Model model) {
         long startTime = System.currentTimeMillis();
+        if(TestConstants.QEXEC_DONE){
+            TestConstants.QEXEC_START = startTime;
+            TestConstants.QEXEC_DONE = false;
+        }
         final QueryExecution executor = QueryExecutionFactory.create(query, model);
         int num = 0;
         switch (query.getQueryType()) {
@@ -320,6 +326,8 @@ public class CLI implements IClient {
         }
 
         long endTime = System.currentTimeMillis();
+        TestConstants.QEXEC_DONE = true;
+        TestConstants.TIME_QUERIES += (endTime-startTime);
         outputStream.println("Done in " + (endTime - startTime) + "ms. Found " + num + " results. No. of Messages=" + PiqnicJenaConstants.NM);
     }
 

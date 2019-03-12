@@ -13,7 +13,7 @@ public class PiqnicIteratorTripleString implements IteratorTripleString {
         this.triples = triples;
     }
 
-    @Override
+    /*@Override
     public boolean hasPrevious() {
         return index > 0;
     }
@@ -25,6 +25,16 @@ public class PiqnicIteratorTripleString implements IteratorTripleString {
             return triples.get(index);
         }
         return triples.get(0);
+    }*/
+
+    @Override
+    public boolean hasPrevious() {
+        return false;
+    }
+
+    @Override
+    public TripleString previous() {
+        return null;
     }
 
     @Override

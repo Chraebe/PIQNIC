@@ -12,7 +12,7 @@ public class PiqnicJenaConstants {
     public static int NM = 0;
 
     public final static int BIND_NUM = 1000;
-    public static ProcessingType PROCESSOR = ProcessingType.DOWN;
+    public static ProcessingType PROCESSOR = ProcessingType.BIND;
 
     public enum ProcessingType {
         FLOOD, BIND, DOWN;

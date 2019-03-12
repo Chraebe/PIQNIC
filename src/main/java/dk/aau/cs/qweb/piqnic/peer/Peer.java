@@ -174,19 +174,11 @@ public class Peer implements IPeer, Comparable<Peer> {
 
     @Override
     public void addFragmentForTest(FragmentBase fragment, int ttl, PrintWriter writer) throws IOException {
-        Socket socket;
-        try {
-            socket = new Socket(address, port);
-        } catch (Exception e) {
-            kill();
-            return;
-        }
-
+        Socket socket = new Socket(address, port);
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
         out.println(7);
-        out.println(fragment.getOwner().getAddress() + ";" + fragment.getOwner().getPort() + ";" + fragment.getOwner().getId());
         out.println(ttl + ";" + fragment.getBaseUri() + ";" + fragment.getId() + ";" + fragment.getFile().getAbsolutePath());
 
         String response;

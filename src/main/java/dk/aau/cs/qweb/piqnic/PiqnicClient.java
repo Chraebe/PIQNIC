@@ -32,19 +32,15 @@ public class PiqnicClient {
     public static boolean running = true;
     public static NetworkManager manager = new NetworkManager();
     public static boolean test = false;
-    public static Map<String, String> fileMap = new HashMap<>();
 
     private static List<Triple> getRandomClients(List<Triple> list) {
         List<Triple> ret = new ArrayList<>();
         if (list.size() == 0) return ret;
 
         Random rand = new Random();
-        for (int i = 0; i < Configuration.instance.getNeighbours(); i++) {
+        for (int i = 0; i < TestConstants.NUM_NEIGHBOURS; i++) {
             Triple t = list.get(rand.nextInt(list.size() - 1));
-            if (UUID.fromString(t.getObject()).equals(nodeInstance.getId()) || ret.contains(t)) {
-                i--;
-                continue;
-            }
+            list.remove(t);
             ret.add(t);
         }
 
@@ -72,6 +68,10 @@ public class PiqnicClient {
 
         int current = 0;
         if (args.length > 1) {
+            if (args.length != 6) {
+                System.out.println("Test Usage: java -jar [filename].jar [config.json] [Peer Number] [No. of Peers] [Replication Amount] [Number of Neighbors] [/path/to/datasets]");
+                return;
+            }
             test = true;
             int num = Integer.parseInt(args[1]);
             current = num;
@@ -83,7 +83,6 @@ public class PiqnicClient {
         } else
             nodeInstance = NodeFactory.createPiqnicNode(ip, Configuration.instance.getListenerPort());
 
-        // java -jar [filename.jar] config.json 0 200 10 predicates hdt/clients
         Runnable runnableListener =
                 () -> {
                     IPeerListener listener = PeerListenerFactory.createPeerListener(nodeInstance.getPort());
@@ -101,6 +100,7 @@ public class PiqnicClient {
         runClient();
 
         if (test) {
+
             int num = Integer.parseInt(args[2]);
             TestConstants.NUM_CLIENTS = num;
             TestConstants.REPLICATION = Integer.parseInt(args[3]);
@@ -117,9 +117,7 @@ public class PiqnicClient {
                 nodeInstance.addNeighbour(peer);
             }
 
-            Map<String, Integer> depMap = new HashMap<>();
-
-            String base = "/q/storage/Aebeloe/datasets";
+            String base = args[5];
 
             // Load fragments
             BufferedReader reader = new BufferedReader(new FileReader(base + "/dataset_distro"));
@@ -139,8 +137,8 @@ public class PiqnicClient {
                 while ((ln = in.readLine()) != null) {
                     String[] ws = ln.split(";");
 
-                    MetaFragmentBase fragment = FragmentFactory.createMetaFragment(baseUri, ws[0], new File(base + "/" + baseUri + "/" + ws[1] + ".hdt"), new Peer((PiqnicNode)nodeInstance), new HashSet<>());
-                    fragment.addPeers(addFragment(fragment, TestConstants.REPLICATION));
+                    MetaFragmentBase fragment = FragmentFactory.createMetaFragment(baseUri, ws[0], new File(base + "/" + baseUri + "/" + ws[1] + ".hdt"), null, new HashSet<>());
+                    fragment.addPeers(addFragment(fragment));
                     dataset.addFragment(fragment);
                 }
                 in.close();
@@ -149,28 +147,11 @@ public class PiqnicClient {
             }
             reader.close();
             System.out.println("Ready");
-
-            /*List<File> files = listFilesForFolder(new File(args[5] + "/" + args[2] + "_" + args[3] + "/client" + args[1] + "/fragments"));
-            Gson gson = new Gson();
-            for(File f : files) {
-                String str = readFile(f.getAbsolutePath(), Charset.defaultCharset());
-                FragmentBase fragmentBase = gson.fromJson(str, FragmentBase.class);
-
-                reader = new BufferedReader(new FileReader(depMap.get(fragmentBase.getPredicate())));
-                String ln = reader.readLine();
-                while (ln != null) {
-                    fragmentBase.addDependent(ln);
-                    ln = reader.readLine();
-                }
-                reader.close();
-
-                nodeInstance.addFragmentBase(fragmentBase);
-            }*/
         }
-        //if (test) PiqnicClient.manager.start();
+        if (test) PiqnicClient.manager.start();
     }
 
-    private static List<IPeer> addFragment(FragmentBase fragmentBase, int ttl) throws IOException {
+    private static List<IPeer> addFragment(FragmentBase fragmentBase) throws IOException {
         Socket socket;
         try {
             socket = new Socket(nodeInstance.getIp(), nodeInstance.getPort());
@@ -181,33 +162,13 @@ public class PiqnicClient {
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
         BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         out.println(7);
-        out.println(fragmentBase.getOwner().getAddress() + ";" + fragmentBase.getOwner().getPort() + ";" + fragmentBase.getOwner().getId());
-        out.println(ttl + ";" + fragmentBase.getBaseUri() + ";" + fragmentBase.getId() + ";" + fragmentBase.getFile().getAbsolutePath());
+        out.println(Configuration.instance.getTimeToLive() + ";" + fragmentBase.getBaseUri() + ";" + fragmentBase.getId() + ";" + fragmentBase.getFile().getAbsolutePath());
 
         List<IPeer> ret = new ArrayList<>();
         String line;
         while((line = reader.readLine()) != null) {
             String[] word = line.split(";");
             ret.add(new Peer(word[1], Integer.parseInt(word[2]), UUID.fromString(word[0])));
-        }
-        return ret;
-    }
-
-    private static String readFile(String path, Charset encoding)
-            throws IOException
-    {
-        byte[] encoded = Files.readAllBytes(Paths.get(path));
-        return new String(encoded, encoding);
-    }
-
-    private static List<File> listFilesForFolder(final File folder) {
-        List<File> ret = new ArrayList<>();
-        for (final File fileEntry : folder.listFiles()) {
-            if (fileEntry.isDirectory()) {
-                ret.addAll(listFilesForFolder(fileEntry));
-            } else {
-                ret.add(fileEntry);
-            }
         }
         return ret;
     }

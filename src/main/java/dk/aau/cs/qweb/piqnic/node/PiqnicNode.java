@@ -5,6 +5,7 @@ import dk.aau.cs.qweb.piqnic.data.FragmentBase;
 import dk.aau.cs.qweb.piqnic.jena.PiqnicIteratorTripleString;
 import dk.aau.cs.qweb.piqnic.peer.IPeer;
 import dk.aau.cs.qweb.piqnic.peer.Peer;
+import dk.aau.cs.qweb.piqnic.test.TestConstants;
 import dk.aau.cs.qweb.piqnic.util.Constituents;
 import dk.aau.cs.qweb.piqnic.util.Triple;
 import org.rdfhdt.hdt.compact.sequence.Sequence;
@@ -14,6 +15,7 @@ import org.rdfhdt.hdt.enums.TripleComponentRole;
 import org.rdfhdt.hdt.exceptions.ParserException;
 import org.rdfhdt.hdt.hdt.HDT;
 import org.rdfhdt.hdt.hdt.HDTManager;
+import org.rdfhdt.hdt.listener.ProgressOut;
 import org.rdfhdt.hdt.options.HDTSpecification;
 import org.rdfhdt.hdt.triples.*;
 import org.rdfhdt.hdt.triples.impl.BitmapTriples;
@@ -88,6 +90,7 @@ public class PiqnicNode extends NodeBase {
     }
 
     private void processTripleBound(Triple triple, FragmentBase fragment, String bindingString, PrintWriter writer) {
+        long start = System.currentTimeMillis();
         HDT hdt;
         if (!hdtMap.containsKey(fragment.getBaseUri() + "/" + fragment.getId())) {
             try {
@@ -118,6 +121,9 @@ public class PiqnicNode extends NodeBase {
                     + dictionary.idToString(ts.getObject(), TripleComponentRole.OBJECT).toString().replace("\n", " ")
                     + ";;" + bindingString);
         }
+        long end = System.currentTimeMillis();
+
+        TestConstants.TIME_TRIPLEPATTERNS += (end-start);
     }
 
     @Override
@@ -130,6 +136,7 @@ public class PiqnicNode extends NodeBase {
     }
 
     private void processTriple(Triple triple, FragmentBase fragment, PrintWriter writer) {
+        long start = System.currentTimeMillis();
         HDT hdt;
         if (!hdtMap.containsKey(fragment.getBaseUri() + "/" + fragment.getId())) {
             try {
@@ -159,6 +166,10 @@ public class PiqnicNode extends NodeBase {
                     + dictionary.idToString(ts.getPredicate(), TripleComponentRole.PREDICATE).toString() + ";;"
                     + dictionary.idToString(ts.getObject(), TripleComponentRole.OBJECT).toString().replace("\n", " "));
         }
+
+        long end = System.currentTimeMillis();
+
+        TestConstants.TIME_TRIPLEPATTERNS += (end-start);
     }
 
     @Override
