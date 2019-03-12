@@ -6,20 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d166cde4-cd73-4da8-be6d-771b34ce66c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/software.iml" beforeDir="false" afterPath="$PROJECT_DIR$/software.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/client/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/connection/PeerListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicJenaConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/peer/Peer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestConstants.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -195,11 +182,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="100" column="21" lean-forward="true" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+            <state relative-caret-position="690">
+              <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -262,7 +249,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -403,9 +390,9 @@
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/test/TestClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/network/NetworkManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/PiqnicClient.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/jena/PiqnicIteratorTripleString.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -638,7 +625,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552398185567" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552398418580" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -714,12 +701,12 @@
       <workItem from="1548358751772" duration="16529000" />
       <workItem from="1548426687490" duration="8660000" />
       <workItem from="1550828582830" duration="4479000" />
-      <workItem from="1552393304395" duration="3679000" />
+      <workItem from="1552393304395" duration="3906000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="654963000" />
+    <option name="totallyTimeSpent" value="655190000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1112,13 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="21" lean-forward="true" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dk/aau/cs/qweb/piqnic/node/PiqnicNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -1159,6 +1139,13 @@
             <element signature="e#1054#1055#0" expanded="true" />
             <element signature="e#1099#1100#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
         </state>
       </provider>
     </entry>
