@@ -110,7 +110,12 @@ public abstract class NodeBase implements INode {
 
         Random rand = new Random();
         for (int i = 0; i < num; i++) {
-            ret.add(neighbours.get(rand.nextInt(neighbours.size() - 1)));
+            Peer n = neighbours.get(rand.nextInt(neighbours.size() - 1));
+            if(ret.contains(n)){
+                i--;
+                continue;
+            }
+            ret.add(n);
         }
 
         return ret;
@@ -135,7 +140,7 @@ public abstract class NodeBase implements INode {
 
     @Override
     public List<Peer> getNeighbours() {
-        return new ArrayList<>(neighbours);
+        return neighbours;
     }
 
     NodeBase(String ip, int port) {

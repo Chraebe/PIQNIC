@@ -40,6 +40,10 @@ public class PiqnicClient {
         Random rand = new Random();
         for (int i = 0; i < TestConstants.NUM_NEIGHBOURS; i++) {
             Triple t = list.get(rand.nextInt(list.size() - 1));
+            if(ret.contains(t)){
+                i--;
+                continue;
+            }
             list.remove(t);
             ret.add(t);
         }

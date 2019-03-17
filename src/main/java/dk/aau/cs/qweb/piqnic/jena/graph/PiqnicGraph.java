@@ -51,7 +51,6 @@ public class PiqnicGraph extends GraphBase {
     @Override
     protected ExtendedIterator<Triple> graphBaseFind(Triple jenaTriple) {
         if (cache.isCached(jenaTriple)) {
-            //System.out.println("Cached " + jenaTriple.toString());
             return cache.get(jenaTriple);
         }
 

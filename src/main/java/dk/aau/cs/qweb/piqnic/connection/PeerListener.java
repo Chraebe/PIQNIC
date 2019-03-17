@@ -271,6 +271,8 @@ public class PeerListener implements IPeerListener {
 
         NUM_MSG = 0;
 
+        long start = System.currentTimeMillis();
+
         String[] words = line.split(";");
         UUID reqId = UUID.fromString(words[0]);
         if (processed.contains(reqId)) {
@@ -295,7 +297,7 @@ public class PeerListener implements IPeerListener {
             }
         }
 
-        while (isRunning(threads)) ;
+        while (isRunning(threads) && ((System.currentTimeMillis() - start) < (500 * ttl))) ;
         System.out.println("NUM_MSG=" + NUM_MSG);
         writer.println(":" + NUM_MSG);
         writer.close();
@@ -343,6 +345,7 @@ public class PeerListener implements IPeerListener {
 
         int ttl = Integer.parseInt(words[1]);
         List<QueryProcessorBoundThread> threads = new ArrayList<>();
+        PiqnicClient.nodeInstance.processTriplePatternBound(triple, bindings, writer);
 
         if (ttl > 1) {
             for (IPeer peer : PiqnicClient.nodeInstance.getNeighbours()) {
@@ -354,7 +357,6 @@ public class PeerListener implements IPeerListener {
 
         }
 
-        PiqnicClient.nodeInstance.processTriplePatternBound(triple, bindings, writer);
         while (isRunningBound(threads) && ((System.currentTimeMillis() - start) < (500 * ttl))) ;
         System.out.println("NUM_MSG: " + NUM_MSG);
         writer.println(":" + NUM_MSG);

@@ -90,7 +90,6 @@ public class Peer implements IPeer, Comparable<Peer> {
             kill();
             return;
         }
-        //System.out.println("Passing " + triple.toString() + " on to " + port + " with ttl " + ttl);
 
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
         BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -284,6 +283,8 @@ public class Peer implements IPeer, Comparable<Peer> {
             ret.add(new Peer(words[0], Integer.parseInt(words[1]), UUID.fromString(words[2])));
         }
 
+        out.close();
+        in.close();
         socket.close();
         return ret;
     }
