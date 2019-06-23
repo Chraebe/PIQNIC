@@ -3,6 +3,15 @@ A github repository for PIQNIC Version 0.1-SNAPSHOT
 
 This Readme and repository are works in progress. The PIQNIC version available here is the one used for experiments in our paper (see also our website at http://relweb.cs.aau.dk/piqnic/).
 
+PIQNIC is currently implemented only as a prototype for testing the performance and availability of a network. Some features, described in the paper are therefore missing. Here is a list of known differences:
+
+    Missing/low-efficient implementation for things not essential for performance, e.g. joining the network and adding new fragments to the network.
+    The random part of the neighbors are not random, since they are the least related neighbors of other nodes.
+    No checks for insertion of fragments, and if it is possible. The request is passed on if an exception is thrown.
+    Request identifiers are used to avoid responding to the same request twice instead of fragment identifier used to not answer the same fragment twice.
+    The query exection strategies are in the code called flood (single), bind (bulk) and down (full).
+
+
 ### Installation
 1. Download the sources and unpack.
 2. Use `mvn install` to generate jar file
